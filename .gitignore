@@ -1,0 +1,8 @@
+tmp/
+*.tmp
+*.log
+*.sw?
+*.html
+*.csv
+pool_meta/
+pages/
