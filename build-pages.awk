@@ -29,7 +29,7 @@ FNR > 1 {
     lastPoolHash = poolHash
   }
 
-  output = output "<tr><td>" stakeHash "</td><td>" stakeAddress "</td><td>" stakeEpochNo "</td><td>" stakedAda "</td><td>" pigyRange "</td></tr>"
+  output = output "<tr><td><a href='https://pooltool.io/address/" stakeHash "'>" stakeHash "</a></td><td>" stakeAddress "</td><td>" stakeEpochNo "</td><td>" stakedAda "</td><td>" pigyRange "</td></tr>"
 }
 
 END {
