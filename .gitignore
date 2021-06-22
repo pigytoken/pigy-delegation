@@ -6,3 +6,5 @@ tmp/
 *.csv
 pool_meta/
 pages/
+pinata.key
+pinata.secret

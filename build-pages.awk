@@ -25,7 +25,7 @@ FNR > 1 {
       output = output " </tbody></table></body></html>"
       print output > ("pages/" epochNo "/" lastPoolHash ".html")
     }
-    output = "<!DOCTYPE html><html><head><link href='../pigy.css' type='text/css' rel='stylesheet'/><title>Epoch " epochNo " Staking for Pool ID " poolHash "</title></head><body><h1>Continuous Staking from Epochs " (epochNo - 3) " through " epochNo "</h1><h2>Pool ID: <code><a href='https://pooltool.io/pool/" poolHash "'>" poolHash "</a></code></h2><h2>Pool Address: <code>" poolAddress "</code></h2>" (poolTicker == "\"\"" ? "" : "<h2>Pool Ticker: " poolTicker "</h2>") "<table><thead><tr><th>Address Hash</th><th>Address</th><th>First Epoch</th><th>ADA in Epoch " epochNo "</th><th>PIGY Range</th></thead><tbody>"
+    output = "<!DOCTYPE html><html><head><meta charset='utf-8'><link href='../view.css' type='text/css' rel='stylesheet'/><title>Epoch " epochNo " Staking for Pool ID " poolHash "</title></head><body><h1>Continuous Staking from Epochs " (epochNo - 3) " through " epochNo "</h1><h2>Pool ID: <code><a href='https://pooltool.io/pool/" poolHash "'>" poolHash "</a></code></h2><h2>Pool Address: <code>" poolAddress "</code></h2>" (poolTicker == "\"\"" ? "" : "<h2>Pool Ticker: " poolTicker "</h2>") "<table><thead><tr><th>Address Hash</th><th>Address</th><th>First Epoch</th><th>ADA in Epoch " epochNo "</th><th>PIGY Range</th></thead><tbody>"
     lastPoolHash = poolHash
   }
 

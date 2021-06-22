@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ true ]]
+if false
 then
 
   gsutil -m rsync -rdecC pages/  gs://data.functionally.dev/cardano/delegation/
