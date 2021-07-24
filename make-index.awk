@@ -9,17 +9,16 @@ BEGIN {
   print "  <head>"
   print "    <meta charset='utf-8'>"
   print "    <link href='view.css' type='text/css' rel='stylesheet'/>"
-  print "    <title>Continuous Staking from Epochs 270 through 273</title>"
+  print "    <title>Staking at PIGY Pools</title>"
   print "  </head>"
   print "  <body>"
-  print "    <h1>Continuous Staking from Epochs 270 through 273</h1>"
+  print "    <h1>Staking at PIGY Pools</h1>"
   print "    <table>"
   print "      <thead>"
   print "        <tr>"
   print "          <th>Pool ID</th>"
   print "          <th>Pool Address</th>"
   print "          <th>Ticker</th>"
-  print "          <th>PIGY Pool?</th>"
   print "        </tr>"
   print "      </thead>"
   print "      <tbody>"
@@ -35,19 +34,20 @@ FNR > 1 {
   epochNo = $4
   stakeHash = $5
   stakeAddress = $6
-  stakeEpochNo = $7
-  stakedAda = $8
-  pigyRange = $9
-  pigyPool = $10
+  firstEpoch = $7
+  noEpochs = $8
+  stakedAda = $9
+  pigyRange = $10
 
   if (lastPoolHash != poolHash) {
-    print "<tr><td><a href='" epochNo "/" poolHash ".html'><code>" poolHash "</code></a></td><td><code>" poolAddress "</code></td><td>" poolTicker "</td><td>" (pigyPool == "t" ? "✓" : "") "</td></tr>"
+    print "<tr><td><a href='" epochNo "/" poolHash ".html'><code>" poolHash "</code></a></td><td><code>" poolAddress "</code></td><td>" poolTicker "</td></tr>"
     lastPoolHash = poolHash
   }
 
 }
 
 END {
+  system("mkdir pages/" epochNo)
   print "      </tbody>"
   print "    </table>"
   print "  </body>"
