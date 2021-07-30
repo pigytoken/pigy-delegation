@@ -1,151 +1,152 @@
-NO	TICKER	WEBSITE	TWITTER	TELEGRAM	SPO Group in adapools.org?	POOL ID
-1	00000	https://adaberrypi.com/			yes	33708d590f4549170125524fcbd6bc189fa8711fba52f8ead4276ca4
-2	1VICA	https://vica-stake-pool.com/			yes	39543229fb6734b60f7ce76886eedee4dd17bbcb49e180ffe1200ee5
-3	1VICA					duplicate
-4	8SQRD 	https://8sqrdpools.com/			yes	6333007fadda8a9e086c2c426a02197f02e3abb4f17e22bf51341231
-5	A4G 	https://www.ada4good.com/			yes	cb87bf12be816ecd5cd6e167442670e4024d85e0005c8623651b371f
-6	ABC	https://abcstake.com/			yes	478bc2098b2ef7117a4dc1a618ea75ca37516be7c6a65fab763f72a2
-7	ACOL 	https://ada.countessoflovelace.io/			yes	1d1a0727f1cae44f801091fe2b80d5589f3ffed24c602a8df7cdb2a3
-8	ADACO	https://adaco.in/			yes	dcb37c1940e79633705c4348ee31a4040e231ec1baa24d63d7b9b451
-9	ADAGO 	https://www.adaspace.xyz/			yes	c73186434c6fc6676bd67304d34518fc6fd7d5eaddaf78641b1e7dcf
-10	ADAR	https://adarewards.org/			yes	f0e3c8d48efb750cdf256b68babc880787bc688972acfbbee1ffc537
-11	ADAXP	https://adaexperience.eu/			yes	f2d23cc3549ab3fe4c78dd9115aab0a9e47dde96b7c4346822c72aa3
-12	ADI 	https://cardanesia.com/			yes	0a423fa44f23b13cba59474427d11746136672af66b2d80b4499dd1d
-13	ANQA 	https://www.ankachain.com/			yes	6749c8ed350238d3673f2389491a46e8a9a260837c5630d775078aaa
-14	APEX 	https://apexpool.info/			yes	538299a358e79a289c8de779f8cd09dd6a6bb286de717d1f744bb357
-15	ARARE	https://arare.io/			yes	f65731aa68706607718d140426c75cd7ac2c40703c31c325fdd46f91
-16	ARM1 	https://www.armadastakepool.com/			yes	a2ccd8e93f5a518d4400790cb081673e79ed41e4bf1132f740f26a28
-17	ATDT	http://pool.atdt.io/			yes	ae7015d54c634f922f800d9800529c3c5a007148ab9d792ac4ff33ae
-18	ATMR 	https://www.atmr-pool.com/			yes	a987503fcad2a35e55bf2dabaeed9542abdbee4a9735552441894396
-19	AVOC	https://adapools.org/pool/pool.numic.eu			yes	5df46b9796868647647f6d3a4ebd188920e70cd12720513337203b62
-20	BEAR 	https://adapools.org/pool/poolbear.io			yes	d75510f36a80dd436ed69b1c76af0724c1969a2ece377ee322ae2e36
-21	BFADA 	https://bonafideada.com/			yes	4f345190f6280c907325bcd11f9b00f222f092c889f6bedfb739abb1
-22	BHMT	https://www.behemothpool.com/			yes	052f4ae6c6f39c00a45e390ed0849fd719e1848c60cf3ba6b985635e
-23	BHMT					duplicate
-24	BIO	https://pool.bio/			yes	603749d1b47c79cdf3072c284abb9810dd98afe827d6ae2b92f115ed
-25	BLOC1					not found
-26	BLOCK	https://kblocks.net/			yes	c63dab6d780a74cbae2a27696c9723f55b3092b2bd001256df03827f
-27	BN1AU 	https://brisnode-cardano.org/			yes	acc4bd79e795648e5134ec8c80bc2d486aa9007de6e87a348a1f98ba
-28	BSP	https://brothershipool.org/			yes	89eba2781e5cd11ccda6be56503702a39e9941e522f04cd5bba22957
-29	BUFFY	https://crypto2099.io/			yes	000022b3f0b748a43239c5024c58f852c05593cd0a77a798f0bb3a14
-30	CDNC	https://www.cdncardano.com/			yes	22531954c0bef931e312836efe14061ba1e33417ea246a7c165dbee9
-31	CHRTY	https://charity-pool.ro/			yes	00333b89543da962cc92e7ffa45848f42a98f7276780670728ce5256
-32	DAD 	https://www.dadstakes.com/			yes	dad893073815ca8b225554a2fc5048e366bd65938551323fc13cf7f5
-33	DCT 	https://decentrapool.webnode.cz/			yes	a5b9e7d6d3cec51a20e0eb0527acd590fe5af81028b1a5bd89fdff2d
-34	DEAD	https://www.deadpoolcrypto.com/			yes	59d12b7a426724961607014aacea1e584f3ebc1196948f42a10893bc
-35	DEEP	https://www.deependpool.net/			yes	8e8af8edf6ea15ddfd1d5103811dd34f9b4a28082517a6094107c5c0
-36	DEGAS 	https://degas-pool.com/			yes	4159a9cc7339bd2c495ad83239c2f1b97c8d2097eed6b120e08948c9
-37	DIGI 	https://digitalfortress.online/			no	1b268f4cba3faa7e36d8a0cc4adca2096fb856119412ee7330f692b5
-38	DOC	https://docstakepool.carrd.co/			yes	9084ebeb011e610e695068a74fa883dac5eda55faca77107b5f40064
-39	ECO	http://ecopool.io/			yes	72de14d78a359617a7dd0b33c5554ed4edbafd768ece87c4bf672ee0
-40	ELITE	https://elitestakepool.com/			no	03ba735795ea8294bccd63efd305168ac8367e9d6fd5f0a6225e12b0
-41	EQL	https://equalstake.net/			yes	6d58efe7a29e73d15386017e17ef4d49a377be5df69a2ee0e3a9c10d
-42	ESP	https://everestada.com/			yes	6f365275ed3b789fc7bf4d4d0b769dc70117542aee93ca328f94ee53
-43	FRNTR	https://frontierpool.com/			yes	ad9a5fae28836eca9e4575588c712e7accd608b1519d72b7a1b058ac
-44	FRUIT	https://phlovers.org/fruit			yes	afc65ca69d52a68a1b1c50ee1b5b07d72890aaa3a2272d5d9391b706
-45	GMBL 	https://gimbalabs.com/			yes	dddce8834df02109524aeb5afa0fd820fc29920eca91a63551ecc26a
-46	GOSLO	https://testernode.github.io/testingpoolada/			yes	50ec1c61547baef8efd5fb3a0bce4759cbcdf72a62948022834d7cf2
-47	GREEN	https://greenstakepool.com/			yes	34a89f77c5fcf0563d129bde9b255f20b269a2dda1561c65d418ec40
-48	GREEN 					duplicate
-49	GULAS 	https://adacoin.hu/			yes	926a9ad87449ee8782926ce1ee07f6e718ca82d974d86d41b0dc7111
-50	HELAS 	https://elladapool.online/			yes	f765c73fa3700f6fa735310ebc0255265613db23fd7bb14e8d84e795
-51	HEX 	https://twitter.com/HexadecimalPool			yes	ad91e2a62ca7c09606995819b26b65b70419b4ef7531fad403f9d61e
-52	ICRYP	https://icryp.net/			yes	2671702f26f947ecc114861c4983bfdc8616d3fa2bace18dd4a91e65
-53	ISR 	https://www.cardano-israel.com/			yes	5121819e5114235cb8c377ecf0a9d4e311898c447043e3b5b2848f63
-54	JED	https://adapool.jed.id.au/			yes	df2c28671a7d2e9b29703547533543926445f3a70f119a07af41d434
-55	JERRY					retired
-56	JOKER	https://twitter.com/cardanojoker			yes	d03dfd66fa5560fa43c8fc524f76299d05102f6a297e2fba2bfa5b9a
-57	KAWAN 	https://kawancardano.com/			yes	40c5a505a4276c94e49b848c1b0aa62c4ea244574f4e2e28ebb29210
-58	KOALA	https://koalapool.org/			yes	9138b6f09e8e69c29fdee4e11b147b7ad351aab23fc73a9976907f10
-59	KOKO1	https://www.kokostaking.com/			yes	094e012c0a5fbdc3958c80fab86e063df85d51d59f8d3ca280e790b4
-60	KOPI	https://kopipool.com/			no	fb4b7b76ea6d857f442cb9569d186f328fc846bb83222c3150ec3346
-61	KURD 	https://kurdopia.store/			yes	f9f646eb4b04adea5afee58b63cc9f53e0da82118c2ab10a6557b922
-62	LACE 	https://lacepool.com/			yes	c04742e0e70c0f52950b465038ef97c7c7e6fe71a20bd88c1b655b63
-63	LGBTQ 	https://lgbtqpool.com/			yes	fc0ef418b0cce20c7a1ac7b8aec9dabd8e9e83b3fcb88c228b4f2c1d
-64	LIMON	https://lemon-pool.com/			yes	2dd26a3b9dd2372c8c483c730d2a47a6f51e51c06b4a9c248f6dd3ac
-65	LOFI	https://lofipool.com/			yes	b1f66fdf23c559b4d8a1d9a0f1d95e06f918008f441b8b550e6f054f
-66	LORDB	http://lordb.rocks/			yes	c95617e76c620b0c55b02deb3bbac70067a3e8a074fb05008ee17215
-67	LSS 	https://longshortsignal.com/cardanopool			yes	4d470d31f80c01d797996b43abdfe7339ae5b408fb31cc655a80ccd7
-68	MEME	https://meme.best/			yes	c9aa8e864d5cc292f0e93669a79b41d67f8ea62481a0d85b14bea386
-69	MMA 	https://mma-stakepool.github.io/			yes	f1ae552b032c2d87a416f4067eaf4636b3fe5e80230a1f63aa33f6bc
-70	MOST	https://www.mostaking.com/			yes	4b4e09f1acb8957ecff8c36091b9a6dedce48c9df8f64d7744d2b080
-71	MUGGY 	https://twitter.com/Muggy_Pool			yes	4044aa415dec3609dcab41faa19b643719b9521ef16eb35945a64bd9
-72	MUSE	https://www.musestakepool.io/			yes	926b65d00c21aa1fb19e44faa2293e342578ed6a80aca4a551191a70
-73	NEAT 	https://www.neatstaking.com/			yes	9c84327ad8de82f858801d2f699e55a5714dca44cf589718c4588541
-74	NEP	https://voyager-stakepool.com/			yes	ef603340ac08cbe1cbe003821a2272e15612b50b86c0066e043dc64e
-75	NODO	https://cardanodo.com/			yes	20c00ebe39ed12dbd2f3e84a5b57b85c972d1039cf79c70d893b6227
-76	ONE	https://red-sky.one/			yes	3805681d8d4bc9c7f298c24fdeca3406849e2db84a0708718d96d0b2
-77	OYSTR	https://twitter.com/OystrPool			yes	febb924e349d816997e007dc09847ded9a2e72d218023c0e5186176d
-78	PANL	https://www.panl.org/			yes	05e11c24a4de15366c6d548f8847589164d02260b6a059a08c22be2a
-79	PECHY	https://peachypool.io/			yes	b7dcd684b724061fbb76ef4f78b7541a0a058ab7b860ef71828e5e19
-80	PEGA	https://pegasuspool.info/			yes	bbbe8bd9d3942563c7cf02e2d605516fb8376e3a49689d9b028cc2ab
-81	PIADA	https://piada.io/			yes	b8d8742c7b7b512468448429c776b3b0f824cef460db61aa1d24bc65
-82	PIGGY	http://piggy.trendingpools.com/			yes	2595f0a5ff4145f3d6ee09e81c2488bdfe2079004eda635a6dce1515
-83	PIGGY					duplicate
-84	PLUTO 	https://www.plutostakepool.com/			yes	6255693643d2dcb804bb89effd50d8ea743bbae07ad62a3b5174ff25
-85	POOLS	https://adapools.org/			no	c3798f717a40ee027583dee28161a9a812d84ade635d8310b878e892
-86	QCPOL	https://qcpol.stakepool.quebec/			yes	c2b8bff5160dd75149f2cae0955698550e8cf0d390025b26a9508a3e
-87	QXT 	https://quixote.systems/			yes	351a90a0253fb3595ccc460438b9947cd8a0b9a7f457f3478bbb31d8
-88	REDH	https://redhorsepool.com/			yes	9539696ef32ea50fef0dd5a24dca2c9c931706532c3a3bdbdbf31766
-89	REDH 					duplicate
-90	RIGHT	https://rightstakepool.com/			yes	5370e250fa08c07881085a59d339a1240ad7561f513b71b64491a001
-91	RISE	https://risecardano.com/			yes	1e4f8dc9672d16131da6533287e32ea100b34d67543ff7c7358c7b5e
-92	RSV	https://reservoir.network/			yes	1be0613ee44270f56b5fbb71f667528e1d877d77d349dd7324d50869
-93	SAGAN	https://adapools.org/pool/www.saganpool.com			yes	387c1f515894d2511d1e791161e69882ddb427ab1701b7af719a8c9f
-94	SBC	https://sbc-pool.tk/			yes	406a08532d2ca8dd08ea39e082dc8acdc2a3b34d0c517bd0e40af5e1
-95	SHARE 	https://share-pool.com/			yes	ea7cdd8918204b6c53e41ac6b0c319a1ffa95312660eeeb2ced8be3a
-96	SIPO	https://sipo.tokyo/			no	76bfa1b2e6593740c3388ed881cbe851dbab8d8741652c9bad16cc94
-97	SQRL	https://adasquirrel.com/			yes	c9a397b8aa1d963030999d4edfd0f809f290f9899c73dfa1ad3a6d70
-98	SRN 	https://www.adasrn.com/			yes	cc1b1c03798884c636703443a23b8d9e827d6c0417921600394198a0
-99	SRP	https://twitter.com/smilerosepool			yes	7f8096e50577c2b2926b47b547d84ceff5dbff45d486ac754ff6a3cb
-100	ST3AK	https://steakandbake.github.io/ada			yes	f76e3a1104a9d816a67d5826a155c9e2979a839d0d944346d47e33ab
-101	STAYK 	https://www.staykpool.com/			yes	fd6049e6058460efa683a0e090e5b98d0ea1d6db539a5a9b0bc649de
-102	STKME2 					not found
-103	STOIC	https://stoicpool.com/			yes	099d512b6ffedd552ae38a9ae2123c116b1d20e1f01bb42a1f539fba
-104	TECH	https://twitter.com/CardanoTech			yes	a60950c7a6e3f7a8247b34035d0a98cb0d11f2d04ba5fa9fd17e1065
-105	THOR	https://thevikingpool.com/			yes	40d04c1367c25e6da2521f906f71bbb07858dc1d2209025364369173
-106	TODAY	https://www.staketoday.io/			yes	b20e9049d0e4e0478ecfa0665ae92270f1b7b6056dd7ff81c2660ea5
-107	TOOLS	https://adapools.org/			no	6ab1fd13a4e182f731ecf356ce3e145311f43cd512be2579ba3572e9
-108	TOPO 	https://topopool.com/			yes	9dda57fac3474adbe8b64be48aafeff6aa31f59909231f202b642d33
-109	TREE	https://adatree.io/			yes	b2d1c479ce496d5be21cb68e95dae7342937c631488c47161d408f39
-110	TTS17	https://tts17.com/			yes	5790d62ab1ba703e861fe800f9cefaaf1485c3ca42c6ba9ce74690a1
-111	VADA	https://vadapool.com/			yes	bf6a228a7928bd7cd6204bd626142d01f0d96a2648e4782abae1cbfb
-112	VLNS	https://valencepool.info/			yes	45db53a3789c6d03a447741cd526fbed788380077efc880521ba9dd9
-113	VNP	https://vnpool.org/			yes	9a60391a0872cb6d0a013e51aab80aa08b85201b01b4804f8880c7d1
-114	WAAC	https://weareadacardano.com/			yes	c37dc293331bd9615cb697a77b9147265472ef97c3513b9182f0e22f
-115	WEQNT	https://weqntstakepool.nl/			yes	a24a0b7f7dec890db8c59c47646290522234a522a98f00cf2d589a80
-116	WINE 	https://winepool.io/			yes	76992ac7c605ff6ec397c296d7964dd3139dd32f8cef70cfc4019361
-117	XSEC	https://ada.xsec.es/			yes	ac4c79de638c8bb08997e939dccde43fe347a392d11a7ddf77bf3816
-118	XYZ	https://cardanopool.xyz/			yes	3dec052cf085697aa6c32a934527f7c5761165a6a6f02a9af30c9ed1
-119	YIELD					inactive
-120	YOADA	https://www.yoada.fr/			yes	96553a437b99271fdcaa30c279e432224342e88147741db73872f03c
-121	YORK 	https://free-york.com/			yes	9aa5e16dda2a131764018bbb9546a18fc9695a152e0f5dff2046e7b4
-122	HEART	https://adaheartpool.com/			yes	f8b811d63ef2ac9e19eff41ab7a99f37b82da701f8ddb34d6d12cdb7
-123	OZZY	http://ozzy-pool.com/			yes	0e3f803915a37af7b6a121409192363e9de658524276c20c26f511ee
-124	A3C	https://www.a3cmodernconsulting.com/			yes	159bd971439653da2b97d12facae06ff5e6d7410d074edaab425202b
-125	CCP	https://cryptocolony.cz/			yes	6381c4d5cbaea9fbdb2bc1152f49c1153fafbf19d77c547624ab91e4
-126	ATFF	https://www.atffpool.at/			yes	fdb8e1e7f181f23d31f09bb4547370ef104688b37b3e7f4fdb222f4f
-127	SBLYR	https://pool.sublayer.io/			yes	8264de3cdb1798dd8758e24cda5101184b44543e7c4421c7815f9ed8
-128	NEO	https://www.neostakepool.nl/			yes	4d000df9ea28a76e0be7ac0a090ea3c2c75d8d309fe7fa11988402dd
-129	AMINT	https://cardanomint.com/			yes	ba67e271c925f7b066a00f4c9cbb9f27b13cef1ab02cca4c245c8acc
-130	STPZ1	https://www.facebook.com/STPZpool/			yes	f218d7c550fecc856bdf09c6ec12d64f68a59b6727f29bedb06d88b1
-131	VOLCY	https://volcyadapool.com/			yes	e3f8a83cefed03fe4ebdc4f50f3cdd880a7c2fd0b2ce7ff9da9cdce2
-132	NANI	https://nanipool.com/			yes	d0deba25ce9e6ff59af7f39305fce373241156616cdf0a49b1d49e48
-133	21ADA	https://www.21ada.ca/			yes	f3efb842c77895dde51e95e54d9c309da599631ef31216bcfea11083
-134	HERO	https://herostakepool.com/			yes	259d8027c33ee454ec2319531269495c07fefcdb52a513c5090f59ed
-135	CMX	https://cardanomex.com/			yes	1df219217b1487843371e0d145f8ef6d6aca2e999b5a963c30a32446
-136	888	https://888pool.io/			yes	7c5fd84421a68f545d09ad8580b2a154a7bb6f79f4a3a8acb4d15e27
-137	XPPX	https://xppx.io/			yes	5693aa7edfe81d12c9062bbe7b7c0b314b9665c6b3cd426152108347
-138	BLIZZ	https://twitter.com/Blizzeffect			yes	1d8558c68a216db830409c5c179d7a0245aacb5d5d50bdcfd5465eb6
-139	SANTO	https://santoelectronics.com/santonode			yes	9837e1eca79504f57acd4e12f2db93ee04a76bca308cae61a6ee205a
-140	VLHLA	https://valhallapool.net/			yes	29889ecc8151e5a93fcd321cd905eee0f50c8364273550205058bfe8
-141	AHL	https://ahlnet.nu/			no	0001a003afb844ce6d9409fc49e049db654a78dc77f1151cb6cd548f
-142	BLU	https://www.adablue.io/			yes	b9147445047312aa139a331390bba715eebb58f1b66c96e660e48986
-143	FAM	http://darkartopia.art/			yes	4d9333fceb79761fb826b22395c4bff84740fbfa8af232d6f6944eb7
-144	CUNUM	https://www.cunum.com/crypto			yes	e4e8771692a6c73270d01852a5f2bb10bbf35388d43c792e883cc824
-145	STAY	https://www.stakepoolada.com/			yes	aa6dd7ae211c87f6cadd6031a641e224d00f49c5cb736a7a502d5056
-146	SPKL	http://spklpool.com/			yes	782310d6e6ab81cde977da3eef0a9f533bd255dadd30d01d33e0dde6
-147	GOLGI	https://golgi-pool.it/			yes	effc78f36adf09718712f78a4ae84f02e6d7cd79e3c9492fcaa2a7f5
-148	GIBON	https://gibon.online/			yes	b352315bd54d61dfcd8fd78a2aa4f3e0cc8ef342b9495465b0b0b2ce
-149	ANDES	https://www.andes-pool.com/			yes	3a7a11ae77e80211034ef393e8a7f64cd4e9f37c4b6d8d90deee9b5a
-150	ALFA	https://alfacardanopool.github.io/			yes	381ad61d5031c2a570c268d2f018bfb65c6eb7e32e535a58384f9a21
+NO	TICKER	WEBSITE	TWITTER	SPO Group in adapools.org?	POOL ID
+1	00000	https://adaberrypi.com/	@adaberrypi	yes	33708d590f4549170125524fcbd6bc189fa8711fba52f8ead4276ca4
+2	1VICA	https://vica-stake-pool.com/	@firstvica	yes	39543229fb6734b60f7ce76886eedee4dd17bbcb49e180ffe1200ee5
+3	8SQRD 	https://8sqrdpools.com/		yes	6333007fadda8a9e086c2c426a02197f02e3abb4f17e22bf51341231
+4	A4G 	https://www.ada4good.com/		yes	cb87bf12be816ecd5cd6e167442670e4024d85e0005c8623651b371f
+5	ABC	https://abcstake.com/		yes	478bc2098b2ef7117a4dc1a618ea75ca37516be7c6a65fab763f72a2
+6	ACOL 	https://ada.countessoflovelace.io/		yes	1d1a0727f1cae44f801091fe2b80d5589f3ffed24c602a8df7cdb2a3
+7	ADACO	https://adaco.in/	@justkawal	yes	dcb37c1940e79633705c4348ee31a4040e231ec1baa24d63d7b9b451
+8	ADAGO 	https://www.adaspace.xyz/		yes	c73186434c6fc6676bd67304d34518fc6fd7d5eaddaf78641b1e7dcf
+9	ADAR	https://adarewards.org/		yes	f0e3c8d48efb750cdf256b68babc880787bc688972acfbbee1ffc537
+10	ADAXP	https://adaexperience.eu/		yes	f2d23cc3549ab3fe4c78dd9115aab0a9e47dde96b7c4346822c72aa3
+11	ADI 	https://cardanesia.com/		yes	0a423fa44f23b13cba59474427d11746136672af66b2d80b4499dd1d
+12	ANQA 	https://www.ankachain.com/		yes	6749c8ed350238d3673f2389491a46e8a9a260837c5630d775078aaa
+13	APEX 	https://apexpool.info/		yes	538299a358e79a289c8de779f8cd09dd6a6bb286de717d1f744bb357
+14	ARARE	https://arare.io/		yes	f65731aa68706607718d140426c75cd7ac2c40703c31c325fdd46f91
+15	ARM1 	https://www.armadastakepool.com/		yes	a2ccd8e93f5a518d4400790cb081673e79ed41e4bf1132f740f26a28
+16	ATDT	http://pool.atdt.io/	@atdtpool	yes	ae7015d54c634f922f800d9800529c3c5a007148ab9d792ac4ff33ae
+17	ATMR 	https://www.atmr-pool.com/		yes	a987503fcad2a35e55bf2dabaeed9542abdbee4a9735552441894396
+18	AVOC	https://adapools.org/pool/pool.numic.eu	@avocadopool	yes	5df46b9796868647647f6d3a4ebd188920e70cd12720513337203b62
+19	BEAR 	https://adapools.org/pool/poolbear.io	@epochpool	yes	d75510f36a80dd436ed69b1c76af0724c1969a2ece377ee322ae2e36
+20	BFADA 	https://bonafideada.com/	@i_amshaunak	yes	4f345190f6280c907325bcd11f9b00f222f092c889f6bedfb739abb1
+21	BHMT	https://www.behemothpool.com/	@behemothpool	yes	052f4ae6c6f39c00a45e390ed0849fd719e1848c60cf3ba6b985635e
+22	BIO	https://pool.bio/	@bio_pool	yes	603749d1b47c79cdf3072c284abb9810dd98afe827d6ae2b92f115ed
+23	BLOC1				not found
+24	BLOCK	https://kblocks.net/		yes	c63dab6d780a74cbae2a27696c9723f55b3092b2bd001256df03827f
+25	BN1AU 	https://brisnode-cardano.org/		yes	acc4bd79e795648e5134ec8c80bc2d486aa9007de6e87a348a1f98ba
+26	BSP	https://brothershipool.org/		yes	89eba2781e5cd11ccda6be56503702a39e9941e522f04cd5bba22957
+27	BUFFY	https://crypto2099.io/		yes	000022b3f0b748a43239c5024c58f852c05593cd0a77a798f0bb3a14
+28	CDNC	https://www.cdncardano.com/		yes	22531954c0bef931e312836efe14061ba1e33417ea246a7c165dbee9
+29	CHRTY	https://charity-pool.ro/		yes	00333b89543da962cc92e7ffa45848f42a98f7276780670728ce5256
+30	DAD 	https://www.dadstakes.com/		yes	dad893073815ca8b225554a2fc5048e366bd65938551323fc13cf7f5
+31	DCT 	https://decentrapool.webnode.cz/		yes	a5b9e7d6d3cec51a20e0eb0527acd590fe5af81028b1a5bd89fdff2d
+32	DEAD	https://www.deadpoolcrypto.com/		yes	59d12b7a426724961607014aacea1e584f3ebc1196948f42a10893bc
+33	DEEP	https://www.deependpool.net/	@applerusted	yes	8e8af8edf6ea15ddfd1d5103811dd34f9b4a28082517a6094107c5c0
+34	DEGAS 	https://degas-pool.com/	@degas_stakepool	yes	4159a9cc7339bd2c495ad83239c2f1b97c8d2097eed6b120e08948c9
+35	DIGI 	https://digitalfortress.online/		no	1b268f4cba3faa7e36d8a0cc4adca2096fb856119412ee7330f692b5
+36	DOC	https://docstakepool.carrd.co/		yes	9084ebeb011e610e695068a74fa883dac5eda55faca77107b5f40064
+37	ECO	http://ecopool.io/		yes	72de14d78a359617a7dd0b33c5554ed4edbafd768ece87c4bf672ee0
+38	ELITE	https://elitestakepool.com/		no	03ba735795ea8294bccd63efd305168ac8367e9d6fd5f0a6225e12b0
+39	EQL	https://equalstake.net/	@equalstake	yes	6d58efe7a29e73d15386017e17ef4d49a377be5df69a2ee0e3a9c10d
+40	ESP	https://everestada.com/		yes	6f365275ed3b789fc7bf4d4d0b769dc70117542aee93ca328f94ee53
+41	FRNTR	https://frontierpool.com/	@poolfrontier	yes	ad9a5fae28836eca9e4575588c712e7accd608b1519d72b7a1b058ac
+42	FRUIT	https://phlovers.org/fruit		yes	afc65ca69d52a68a1b1c50ee1b5b07d72890aaa3a2272d5d9391b706
+43	GMBL 	https://gimbalabs.com/		yes	dddce8834df02109524aeb5afa0fd820fc29920eca91a63551ecc26a
+44	GOSLO	https://testernode.github.io/testingpoolada/		yes	50ec1c61547baef8efd5fb3a0bce4759cbcdf72a62948022834d7cf2
+45	GREEN	https://greenstakepool.com/		yes	34a89f77c5fcf0563d129bde9b255f20b269a2dda1561c65d418ec40
+46	GULAS 	https://adacoin.hu/		yes	926a9ad87449ee8782926ce1ee07f6e718ca82d974d86d41b0dc7111
+47	HELAS 	https://elladapool.online/		yes	f765c73fa3700f6fa735310ebc0255265613db23fd7bb14e8d84e795
+48	HEX 	https://twitter.com/HexadecimalPool		yes	ad91e2a62ca7c09606995819b26b65b70419b4ef7531fad403f9d61e
+49	ICRYP	https://icryp.net/		yes	2671702f26f947ecc114861c4983bfdc8616d3fa2bace18dd4a91e65
+50	ISR 	https://www.cardano-israel.com/	@israelicardano	yes	5121819e5114235cb8c377ecf0a9d4e311898c447043e3b5b2848f63
+51	JED	https://adapool.jed.id.au/	@jstakepool	yes	df2c28671a7d2e9b29703547533543926445f3a70f119a07af41d434
+52	JERRY				retired
+53	JOKER	https://twitter.com/cardanojoker	@cardanojoker	yes	d03dfd66fa5560fa43c8fc524f76299d05102f6a297e2fba2bfa5b9a
+54	KAWAN 	https://kawancardano.com/		yes	40c5a505a4276c94e49b848c1b0aa62c4ea244574f4e2e28ebb29210
+55	KOALA	https://koalapool.org/		yes	9138b6f09e8e69c29fdee4e11b147b7ad351aab23fc73a9976907f10
+56	KOKO1	https://www.kokostaking.com/		yes	094e012c0a5fbdc3958c80fab86e063df85d51d59f8d3ca280e790b4
+57	KOPI	https://kopipool.com/		no	fb4b7b76ea6d857f442cb9569d186f328fc846bb83222c3150ec3346
+58	KURD 	https://kurdopia.store/		yes	f9f646eb4b04adea5afee58b63cc9f53e0da82118c2ab10a6557b922
+59	LACE 	https://lacepool.com/		yes	c04742e0e70c0f52950b465038ef97c7c7e6fe71a20bd88c1b655b63
+60	LGBTQ 	https://lgbtqpool.com/		yes	fc0ef418b0cce20c7a1ac7b8aec9dabd8e9e83b3fcb88c228b4f2c1d
+61	LIMON	https://lemon-pool.com/		yes	2dd26a3b9dd2372c8c483c730d2a47a6f51e51c06b4a9c248f6dd3ac
+62	LOFI	https://lofipool.com/		yes	b1f66fdf23c559b4d8a1d9a0f1d95e06f918008f441b8b550e6f054f
+63	LORDB	http://lordb.rocks/		yes	c95617e76c620b0c55b02deb3bbac70067a3e8a074fb05008ee17215
+64	LSS 	https://longshortsignal.com/cardanopool		yes	4d470d31f80c01d797996b43abdfe7339ae5b408fb31cc655a80ccd7
+65	MEME	https://meme.best/	@meme_pool	yes	c9aa8e864d5cc292f0e93669a79b41d67f8ea62481a0d85b14bea386
+66	MMA 	https://mma-stakepool.github.io/	@mma_stake_pool	yes	f1ae552b032c2d87a416f4067eaf4636b3fe5e80230a1f63aa33f6bc
+67	MOST	https://www.mostaking.com/		yes	4b4e09f1acb8957ecff8c36091b9a6dedce48c9df8f64d7744d2b080
+68	MUGGY 	https://twitter.com/Muggy_Pool		yes	4044aa415dec3609dcab41faa19b643719b9521ef16eb35945a64bd9
+69	MUSE	https://www.musestakepool.io/		yes	926b65d00c21aa1fb19e44faa2293e342578ed6a80aca4a551191a70
+70	NEAT 	https://www.neatstaking.com/		yes	9c84327ad8de82f858801d2f699e55a5714dca44cf589718c4588541
+71	NEP	https://voyager-stakepool.com/		yes	ef603340ac08cbe1cbe003821a2272e15612b50b86c0066e043dc64e
+72	NODO	https://cardanodo.com/	@nodopool	yes	20c00ebe39ed12dbd2f3e84a5b57b85c972d1039cf79c70d893b6227
+73	ONE	https://red-sky.one/	@enigma_spo	yes	3805681d8d4bc9c7f298c24fdeca3406849e2db84a0708718d96d0b2
+74	OYSTR	https://twitter.com/OystrPool		yes	febb924e349d816997e007dc09847ded9a2e72d218023c0e5186176d
+75	PANL	https://www.panl.org/		yes	05e11c24a4de15366c6d548f8847589164d02260b6a059a08c22be2a
+76	PECHY	https://peachypool.io/		yes	b7dcd684b724061fbb76ef4f78b7541a0a058ab7b860ef71828e5e19
+77	PEGA	https://pegasuspool.info/		yes	bbbe8bd9d3942563c7cf02e2d605516fb8376e3a49689d9b028cc2ab
+78	PIADA	https://piada.io/		yes	b8d8742c7b7b512468448429c776b3b0f824cef460db61aa1d24bc65
+79	PIGGY	http://piggy.trendingpools.com/	@ada_piggy	yes	2595f0a5ff4145f3d6ee09e81c2488bdfe2079004eda635a6dce1515
+80	PLUTO 	https://www.plutostakepool.com/		yes	6255693643d2dcb804bb89effd50d8ea743bbae07ad62a3b5174ff25
+81	POOLS	https://adapools.org/		no	c3798f717a40ee027583dee28161a9a812d84ade635d8310b878e892
+82	QCPOL	https://qcpol.stakepool.quebec/		yes	c2b8bff5160dd75149f2cae0955698550e8cf0d390025b26a9508a3e
+83	QXT 	https://quixote.systems/	@quixotepool	yes	351a90a0253fb3595ccc460438b9947cd8a0b9a7f457f3478bbb31d8
+84	REDH	https://redhorsepool.com/		yes	9539696ef32ea50fef0dd5a24dca2c9c931706532c3a3bdbdbf31766
+85	RIGHT	https://rightstakepool.com/		yes	5370e250fa08c07881085a59d339a1240ad7561f513b71b64491a001
+86	RISE	https://risecardano.com/		yes	1e4f8dc9672d16131da6533287e32ea100b34d67543ff7c7358c7b5e
+87	RSV	https://reservoir.network/		yes	1be0613ee44270f56b5fbb71f667528e1d877d77d349dd7324d50869
+88	SAGAN	https://adapools.org/pool/www.saganpool.com		yes	387c1f515894d2511d1e791161e69882ddb427ab1701b7af719a8c9f
+89	SBC	https://sbc-pool.tk/	@miningsbc	yes	406a08532d2ca8dd08ea39e082dc8acdc2a3b34d0c517bd0e40af5e1
+90	SHARE 	https://share-pool.com/		yes	ea7cdd8918204b6c53e41ac6b0c319a1ffa95312660eeeb2ced8be3a
+91	SIPO	https://sipo.tokyo/		no	76bfa1b2e6593740c3388ed881cbe851dbab8d8741652c9bad16cc94
+92	SQRL	https://adasquirrel.com/		yes	c9a397b8aa1d963030999d4edfd0f809f290f9899c73dfa1ad3a6d70
+93	SRN 	https://www.adasrn.com/		yes	cc1b1c03798884c636703443a23b8d9e827d6c0417921600394198a0
+94	SRP	https://twitter.com/smilerosepool	@smilerosepool	yes	7f8096e50577c2b2926b47b547d84ceff5dbff45d486ac754ff6a3cb
+95	ST3AK	https://steakandbake.github.io/ada	@steakandbaker	yes	f76e3a1104a9d816a67d5826a155c9e2979a839d0d944346d47e33ab
+96	STAYK 	https://www.staykpool.com/		yes	fd6049e6058460efa683a0e090e5b98d0ea1d6db539a5a9b0bc649de
+97	STKME	https://stakepool.me/		yes	551ac8adfb28d1d417f848ce663e85627ff7d0b62746c7e327b13ed8
+98	STOIC	https://stoicpool.com/		yes	099d512b6ffedd552ae38a9ae2123c116b1d20e1f01bb42a1f539fba
+99	TECH	https://twitter.com/CardanoTech		yes	a60950c7a6e3f7a8247b34035d0a98cb0d11f2d04ba5fa9fd17e1065
+100	THOR	https://thevikingpool.com/		yes	40d04c1367c25e6da2521f906f71bbb07858dc1d2209025364369173
+101	TODAY	https://www.staketoday.io/	@staketoday_io	yes	b20e9049d0e4e0478ecfa0665ae92270f1b7b6056dd7ff81c2660ea5
+102	TOOLS	https://adapools.org/		no	6ab1fd13a4e182f731ecf356ce3e145311f43cd512be2579ba3572e9
+103	TOPO 	https://topopool.com/	@topo_pool	yes	9dda57fac3474adbe8b64be48aafeff6aa31f59909231f202b642d33
+104	TREE	https://adatree.io/	@adatreepool	yes	b2d1c479ce496d5be21cb68e95dae7342937c631488c47161d408f39
+105	TTS17	https://tts17.com/	@tts1710	yes	5790d62ab1ba703e861fe800f9cefaaf1485c3ca42c6ba9ce74690a1
+106	VADA	https://vadapool.com/	@vadapool	yes	bf6a228a7928bd7cd6204bd626142d01f0d96a2648e4782abae1cbfb
+107	VLNS	https://valencepool.info/	@valancepool	yes	45db53a3789c6d03a447741cd526fbed788380077efc880521ba9dd9
+108	VNP	https://vnpool.org/	@vnpool_org	yes	9a60391a0872cb6d0a013e51aab80aa08b85201b01b4804f8880c7d1
+109	WAAC	https://weareadacardano.com/		yes	c37dc293331bd9615cb697a77b9147265472ef97c3513b9182f0e22f
+110	WEQNT	https://weqntstakepool.nl/		yes	a24a0b7f7dec890db8c59c47646290522234a522a98f00cf2d589a80
+111	WINE 	https://winepool.io/		yes	76992ac7c605ff6ec397c296d7964dd3139dd32f8cef70cfc4019361
+112	XSEC	https://ada.xsec.es/	@xsecp	yes	ac4c79de638c8bb08997e939dccde43fe347a392d11a7ddf77bf3816
+113	XYZ	https://cardanopool.xyz/	@cardanopoolxyz	yes	3dec052cf085697aa6c32a934527f7c5761165a6a6f02a9af30c9ed1
+114	YIELD				retired
+115	YOADA	https://www.yoada.fr/	@yoadastakepool	yes	96553a437b99271fdcaa30c279e432224342e88147741db73872f03c
+116	YORK 	https://free-york.com/		yes	9aa5e16dda2a131764018bbb9546a18fc9695a152e0f5dff2046e7b4
+117	HEART	https://adaheartpool.com/	@adaheartpool	yes	f8b811d63ef2ac9e19eff41ab7a99f37b82da701f8ddb34d6d12cdb7
+118	OZZY	http://ozzy-pool.com/	@ozzy_pool	yes	0e3f803915a37af7b6a121409192363e9de658524276c20c26f511ee
+119	A3C	https://www.a3cmodernconsulting.com/	@shawna3c	yes	159bd971439653da2b97d12facae06ff5e6d7410d074edaab425202b
+120	CCP	https://cryptocolony.cz/	@cryptocolonycz	yes	6381c4d5cbaea9fbdb2bc1152f49c1153fafbf19d77c547624ab91e4
+121	ATFF	https://www.atffpool.at/	@atffpool	yes	fdb8e1e7f181f23d31f09bb4547370ef104688b37b3e7f4fdb222f4f
+122	SBLYR	https://pool.sublayer.io/	@sublayerio	yes	8264de3cdb1798dd8758e24cda5101184b44543e7c4421c7815f9ed8
+123	NEO	https://www.neostakepool.nl/	@neo_stakepool	yes	4d000df9ea28a76e0be7ac0a090ea3c2c75d8d309fe7fa11988402dd
+124	AMINT	https://cardanomint.com/	@cardanomint	yes	ba67e271c925f7b066a00f4c9cbb9f27b13cef1ab02cca4c245c8acc
+125	STPZ1	https://www.facebook.com/STPZpool/	@stefanosu1	yes	f218d7c550fecc856bdf09c6ec12d64f68a59b6727f29bedb06d88b1
+126	VOLCY	https://volcyadapool.com/	@gvolcy	yes	e3f8a83cefed03fe4ebdc4f50f3cdd880a7c2fd0b2ce7ff9da9cdce2
+127	NANI	https://nanipool.com/	@nanipool	yes	d0deba25ce9e6ff59af7f39305fce373241156616cdf0a49b1d49e48
+128	21ADA	https://www.21ada.ca/	@21adapool	yes	f3efb842c77895dde51e95e54d9c309da599631ef31216bcfea11083
+129	HERO	https://herostakepool.com/	@beaker2288	yes	259d8027c33ee454ec2319531269495c07fefcdb52a513c5090f59ed
+130	CMX	https://cardanomex.com/	@cardanomex	yes	1df219217b1487843371e0d145f8ef6d6aca2e999b5a963c30a32446
+131	888	https://888pool.io/	@888pool_io	yes	7c5fd84421a68f545d09ad8580b2a154a7bb6f79f4a3a8acb4d15e27
+132	XPPX	https://xppx.io/	@xpr0ph3tx	yes	5693aa7edfe81d12c9062bbe7b7c0b314b9665c6b3cd426152108347
+133	BLIZZ	https://twitter.com/Blizzeffect	@blizzeffect	yes	1d8558c68a216db830409c5c179d7a0245aacb5d5d50bdcfd5465eb6
+134	SANTO	https://santoelectronics.com/santonode	@nodesanto	yes	9837e1eca79504f57acd4e12f2db93ee04a76bca308cae61a6ee205a
+135	VLHLA	https://valhallapool.net/	@valhallapool	yes	29889ecc8151e5a93fcd321cd905eee0f50c8364273550205058bfe8
+136	AHL	https://ahlnet.nu/	@olaahlman	no	0001a003afb844ce6d9409fc49e049db654a78dc77f1151cb6cd548f
+137	BLU	https://www.adablue.io/	@ada_blu_	yes	b9147445047312aa139a331390bba715eebb58f1b66c96e660e48986
+138	FAM	http://darkartopia.art/	@darkartopia	yes	4d9333fceb79761fb826b22395c4bff84740fbfa8af232d6f6944eb7
+139	CUNUM	https://www.cunum.com/crypto	@cunumstaking	yes	e4e8771692a6c73270d01852a5f2bb10bbf35388d43c792e883cc824
+140	STAY	https://www.stakepoolada.com/	@stay_pool	yes	aa6dd7ae211c87f6cadd6031a641e224d00f49c5cb736a7a502d5056
+141	SPKL	http://spklpool.com/	@spklpool	yes	782310d6e6ab81cde977da3eef0a9f533bd255dadd30d01d33e0dde6
+142	GOLGI	https://golgi-pool.it/	@golgilt	yes	effc78f36adf09718712f78a4ae84f02e6d7cd79e3c9492fcaa2a7f5
+143	GIBON	https://gibon.online/	@gibon_pool	yes	b352315bd54d61dfcd8fd78a2aa4f3e0cc8ef342b9495465b0b0b2ce
+144	ANDES	https://www.andes-pool.com/	@andesspo	yes	3a7a11ae77e80211034ef393e8a7f64cd4e9f37c4b6d8d90deee9b5a
+145	ALFA	https://alfacardanopool.github.io/	@alfacardanopool	yes	381ad61d5031c2a570c268d2f018bfb65c6eb7e32e535a58384f9a21
+146	HIPPO	https://hippo-pool.com/	@hippostake	yes	718f15efee599d498a7582c4f56a940cfebffc14e850656db8d529e1
+147	GIRLS	https://www.girlspool.tech/	N/A	yes	5c184a0e4337d651c0bf47556c09e727a25e00cc03f31580b53ee8f7
+148	HAZEL	https://www.hazelpool.com	@NilsCodes	yes	be80794a946cf5e578846fc81e3c62ac13f4ab3335e0f5dc046edad4
+149	SUDTI	https://southtyrolpool.it	@southtyrolpool	yes	2dabd15e4759334738940a65e06b6589f674a29347db0a36d75a5d36
+150	OTG	https://adamantium.online	@otg_wcat	yes	c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae
+151	TAILS	https://metromermaids.com	@mermada_	yes	2ce9bfc4e0a732d21ec8739cbfc3b10957b4e3297fd320d556f48ada
