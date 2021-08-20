@@ -2,9 +2,3 @@ tmp/
 *.tmp
 *.log
 *.sw?
-*.html
-*.csv
-pool_meta/
-pages/
-pinata.key
-pinata.secret

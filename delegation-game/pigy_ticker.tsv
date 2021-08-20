@@ -69,14 +69,14 @@ NO	TICKER	WEBSITE	TWITTER	SPO Group in adapools.org?	POOL ID
 68	MUGGY 	https://twitter.com/Muggy_Pool		yes	4044aa415dec3609dcab41faa19b643719b9521ef16eb35945a64bd9
 69	MUSE	https://www.musestakepool.io/		yes	926b65d00c21aa1fb19e44faa2293e342578ed6a80aca4a551191a70
 70	NEAT 	https://www.neatstaking.com/		yes	9c84327ad8de82f858801d2f699e55a5714dca44cf589718c4588541
-71	NEP	https://voyager-stakepool.com/		yes	ef603340ac08cbe1cbe003821a2272e15612b50b86c0066e043dc64e
+71	NEP	https://voyager-stakepool.com/	@poolvoyager	yes	ef603340ac08cbe1cbe003821a2272e15612b50b86c0066e043dc64e
 72	NODO	https://cardanodo.com/	@nodopool	yes	20c00ebe39ed12dbd2f3e84a5b57b85c972d1039cf79c70d893b6227
 73	ONE	https://red-sky.one/	@enigma_spo	yes	3805681d8d4bc9c7f298c24fdeca3406849e2db84a0708718d96d0b2
 74	OYSTR	https://twitter.com/OystrPool		yes	febb924e349d816997e007dc09847ded9a2e72d218023c0e5186176d
 75	PANL	https://www.panl.org/		yes	05e11c24a4de15366c6d548f8847589164d02260b6a059a08c22be2a
 76	PECHY	https://peachypool.io/		yes	b7dcd684b724061fbb76ef4f78b7541a0a058ab7b860ef71828e5e19
 77	PEGA	https://pegasuspool.info/		yes	bbbe8bd9d3942563c7cf02e2d605516fb8376e3a49689d9b028cc2ab
-78	PIADA	https://piada.io/		yes	b8d8742c7b7b512468448429c776b3b0f824cef460db61aa1d24bc65
+78	PIADA	https://piada.io/	@piada_stakepool	yes	b8d8742c7b7b512468448429c776b3b0f824cef460db61aa1d24bc65
 79	PIGGY	http://piggy.trendingpools.com/	@ada_piggy	yes	2595f0a5ff4145f3d6ee09e81c2488bdfe2079004eda635a6dce1515
 80	PLUTO 	https://www.plutostakepool.com/		yes	6255693643d2dcb804bb89effd50d8ea743bbae07ad62a3b5174ff25
 81	POOLS	https://adapools.org/		no	c3798f717a40ee027583dee28161a9a812d84ade635d8310b878e892
@@ -95,7 +95,7 @@ NO	TICKER	WEBSITE	TWITTER	SPO Group in adapools.org?	POOL ID
 94	SRP	https://twitter.com/smilerosepool	@smilerosepool	yes	7f8096e50577c2b2926b47b547d84ceff5dbff45d486ac754ff6a3cb
 95	ST3AK	https://steakandbake.github.io/ada	@steakandbaker	yes	f76e3a1104a9d816a67d5826a155c9e2979a839d0d944346d47e33ab
 96	STAYK 	https://www.staykpool.com/		yes	fd6049e6058460efa683a0e090e5b98d0ea1d6db539a5a9b0bc649de
-97	STKME	https://stakepool.me/		yes	551ac8adfb28d1d417f848ce663e85627ff7d0b62746c7e327b13ed8
+97	STKME	https://stakepool.me/	@stkme2	yes	551ac8adfb28d1d417f848ce663e85627ff7d0b62746c7e327b13ed8
 98	STOIC	https://stoicpool.com/		yes	099d512b6ffedd552ae38a9ae2123c116b1d20e1f01bb42a1f539fba
 99	TECH	https://twitter.com/CardanoTech		yes	a60950c7a6e3f7a8247b34035d0a98cb0d11f2d04ba5fa9fd17e1065
 100	THOR	https://thevikingpool.com/		yes	40d04c1367c25e6da2521f906f71bbb07858dc1d2209025364369173
@@ -166,3 +166,12 @@ NO	TICKER	WEBSITE	TWITTER	SPO Group in adapools.org?	POOL ID
 165	NORB	norbpool.club	@norbpool	yes	71b00c23502112d4c634e325f28c9ade2a4ba4ec251677d306ae6b7b
 166	CANUK	https://cardanocanucks.com	@canadacardano	yes	4deb0ba979fe7af5a5a4896ef68cdae029ad116542555cb422f46348
 167	AVENE	https://avenepool.com	@avenepool	yes	5e7ff9707b194d0a8abc37b35d6ca34112faaa777032e2268b2f8d07
+168	ISLA	https://0xisla.live	@IslaStakePool	yes	679b1d8a164791f21ab5a9a7fd2c8cfc108f76aad351912ec841847e
+169	MALU	https://maluiin.com	@cryptofly777	yes	38927599cc3ff6b081501e0ee1dc4f0cb8ba012b3de8b49a785bb05a
+170	ITZA	https://latinstakepools.com/	@Latinstakepools	yes	c29dd3c55a4f3f3b02aae6463ef8e1e66a70b5d000f8a6dc3430ef04
+171	1COMM	https://www.onecommunityada.com	@OneCommunityAda	yes	75f7b7dec6e4c973407a6a64132961635f405f2c3a9ff31598db01da
+172	TITW	https://pools.pm/titw	@TITW_stakepool	yes	ca599df54182962bb2c1420ad2cbdc10e3df7c4c2afac18e810e7035
+173	NORTH	https://nordicpool.org	@NordicPool	yes	52e22df52e90370f639c99f5c760f0cd67d7f871cd0d0764fae47cd9
+174	HAMDA	https://hamster-stake-pool.de	@HAMDAStakePool	yes	bb32c21c1ca7dc8f73fad1b6263987139a868fad820b3c3069fefcd6
+175	WELL	blockswell.com	@blocksWELLpool	yes	188d429c9e1b559b3ed53529ec4cc948d72e4a8f2e5849523bb789d9
+176	CCOL	https://cardanocolombia.com.co/es_es/	@CardanoCol	yes	ddf686213f0a98f6515a7a700652e229ce222174158f5f82b43457bc
