@@ -7,11 +7,13 @@ set -ex
 . $HOME/secrets/ipfs.sh
 . $HOME/secrets/postgresql.sh
 
+DATE=$(date --rfc-3339 seconds -u)
+
 psql -f compute-eligibility.sql
 
-gawk -f make-index.awk Eligibility.csv > pages/index.html
+gawk -f make-index.awk -v date="$DATE" Eligibility.csv > pages/index.html
 
-gawk -f build-pages.awk Eligibility.csv
+gawk -f build-pages.awk -v date="$DATE" Eligibility.csv
 
 DIR_CID=$(ipfs add --quiet --pin=false --recursive=true pages | tail -n 1)
 

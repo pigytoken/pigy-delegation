@@ -13,6 +13,7 @@ BEGIN {
   print "  </head>"
   print "  <body>"
   print "    <h1>Staking at PIGY Pools</h1>"
+  print "    <h2>" date "</h2>"
   print "    <table>"
   print "      <thead>"
   print "        <tr>"
