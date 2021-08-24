@@ -1,4 +1,5 @@
 
+drop table pigy_tx_out;
 create temporary table pigy_tx_out as
 select
     tx_id as tx_out_id
@@ -13,13 +14,14 @@ select
   left join stake_address
     on stake_address_id = stake_address.id
   left join pool_owner
-    on pool_owner.addr_id = stake_address.id
+    on pool_owner.id = stake_address.id
   left join pool_hash
     on pool_hash.id = pool_hash_id
   where substr(policy :: varchar(66), 3) = '2aa9c1557fcf8e7caa049fa0911a8724a1cdaf8037fe0b431c6ac664'
 order by 1
 ;
 
+drop table pigy_first;
 create table pigy_first as
 select
     row_number() over(order by tx_out_id) as pigy_first
@@ -33,6 +35,7 @@ select
     ) p
 ;
 
+drop table pigy_tx;
 create temporary table pigy_tx as
 select
     id as tx_id
@@ -42,6 +45,7 @@ select
 order by 1
 ;
 
+drop table pigy_tx_in;
 create temporary table pigy_tx_in as
 select
     tx_in_id
@@ -63,13 +67,15 @@ select
   having count(distinct a.source) > 1
 ;
 
+drop table pigy_history;
 create temporary table pigy_history as
-select
-    f.pigy_first as "Order of Receipt"
-  , a.source as "From Address"
-  , b.source as "To Address"
-  , to_char(b.pigy, '99 999 999 999') as "PIGY"
+select distinct
+    f.pigy_first                       as "Order of First PIGY Receipt"
+  , a.source                           as "From Address"
+  , b.source                           as "To Address"
+  , to_char(b.pigy, '99 999 999 999')  as "PIGY"
   , d.tx_hash || '#' || b.tx_out_index as "Transaction"
+  , d.tx_id                            as "Order of Transactions"
   from pigy_tx_in c
   inner join pigy_tx_out a
     on  a.tx_out_id    = c.tx_out_id
@@ -81,7 +87,7 @@ select
   inner join pigy_tx d
     on b.tx_out_id = d.tx_id
   where a.source != b.source
-order by 1
+order by 1, 6
 ;
 
 \copy pigy_history to pigy-history.csv csv header quote '"' force quote "PIGY"
