@@ -1,5 +1,6 @@
 
-drop table pigy_tx_out;
+--drop table pigy_tx_out;
+
 create temporary table pigy_tx_out as
 select
     tx_id as tx_out_id
@@ -21,7 +22,9 @@ select
 order by 1
 ;
 
-drop table pigy_first;
+
+--drop table pigy_first;
+
 create table pigy_first as
 select
     row_number() over(order by tx_out_id) as pigy_first
@@ -35,7 +38,9 @@ select
     ) p
 ;
 
-drop table pigy_tx;
+
+--drop table pigy_tx;
+
 create temporary table pigy_tx as
 select
     id as tx_id
@@ -45,7 +50,9 @@ select
 order by 1
 ;
 
-drop table pigy_tx_in;
+
+--drop table pigy_tx_in;
+
 create temporary table pigy_tx_in as
 select
     tx_in_id
@@ -67,7 +74,9 @@ select
   having count(distinct a.source) > 1
 ;
 
-drop table pigy_history;
+
+--drop table pigy_history;
+
 create temporary table pigy_history as
 select distinct
     f.pigy_first                       as "Order of First PIGY Receipt"
@@ -89,5 +98,6 @@ select distinct
   where a.source != b.source
 order by 1, 6
 ;
+
 
 \copy pigy_history to pigy-history.csv csv header quote '"' force quote "PIGY"
