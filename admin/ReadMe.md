@@ -26,7 +26,7 @@
         *   data = `dnslink=/ipns/k51qzi5uqu5dlqqi4i30e0nt7tzv84u2e8p4v2b9odw8nghhz6bqu9054mxiz9`
     *   CNAME record for `oracle`
         *   data = `cloudflare-ipfs.com`
-*   Source: https://github.com/functionally/pigy-delegation/oracle/pages/
+*   Source: https://github.com/functionally/pigy-delegation/oracle/tree/main/pages/
 
 
 ### statistics.pigytoken.com
