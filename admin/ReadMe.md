@@ -43,7 +43,7 @@
 ## GitHub Repositories
 
 *   Calculation of statistics for PIGY delegation: https://github.com/functionally/pigy-delegation
-*   Pig Image-Token Service: https://github.com/functionally/pigy-genetics
+*   Pig-image token service: https://github.com/functionally/pigy-genetics
 *   Oracle: https://github.com/functionally/mantis-oracle
 
 These are main-branch mirrors of development repositories on https://bitbucket.org/functionally/.
