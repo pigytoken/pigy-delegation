@@ -40,7 +40,7 @@ The service currently posts currency and precious metal spot prices. Here is [an
 Because Plutus does not have a data type for real (floating point) numbers, the prices are represented as a value divided by a scale. Here is how to interpret the example above:
 
 | Item           | Price               |
-|----------------|---------------------|
+|----------------|--------------------:|
 | EUR            |     0.84700 EUR/USD |
 | GBP            |     0.72725 GBP/USD |
 | IDR            | 14228.85    IDR/USD |
@@ -51,8 +51,8 @@ Because Plutus does not have a data type for real (floating point) numbers, the 
 | SOFR           |     0.05%           |
 
 
-Reading the Oracle
-------------------
+Reading the Oracle Datum
+------------------------
 
 On Alonzo Purple, the oracle resides at [`addr_test1wrlatjg53r4z49rzyg76eyxq5zlu66v4j5hucf25kuv3j9sv84h5p`](https://explorer.alonzo-purple.dev.cardano.org/en/address?address=addr_test1wrlatjg53r4z49rzyg76eyxq5zlu66v4j5hucf25kuv3j9sv84h5p). The compiled Plutus code for the oracle is in [alonzo-purple.plutus](alonzo-purple.plutus). The source code is in the [`mantis-oracle`](https://github.com/functionally/mantis-oracle/blob/main/ReadMe.md) Haskell package.
 
