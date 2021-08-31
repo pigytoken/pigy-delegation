@@ -28,6 +28,9 @@ th, td {
 ; padding       : 4px
 }
 
+td:nth-of-type(2) {
+  text-align: right
+}
 
 a {
   color          : #e85d91ff
