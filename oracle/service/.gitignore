@@ -3,5 +3,6 @@ ipfs.path
 rapidapi.secret
 on-chain.json
 *.protocol
+tmp-*.json
 tx.*
 mantis-oracle
