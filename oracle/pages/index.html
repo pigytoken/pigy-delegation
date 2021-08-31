@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+  <head profile="http://www.w3.org/2005/10/profile">
+    <!--link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico"/-->
+    <meta charset="UTF-8">
+    <link href="view.css" type="text/css" rel="stylesheet"/>
+    <title>PIGY Oracle</title>
+  </head>
+  <body>
+    <img id="pig" src="oracle-pig.png"/>
+    <h1>PIGY Oracle</h1>
+    <p>The PIGY Oracle is a general-purpose Cardano <a target="oracle" href="https://en.wikipedia.org/wiki/Blockchain_oracle">oracle</a> that posts off-chain information such as interest rates or commodity prices into smart contracts as on-chain data attached to the oracle's eUTxO. The fee for the oracle is paid in <a target="oracle" href="https://pigytoken.com/">PIGY token</a>, not in ADA.</p>
+    <ul>
+      <li>It currently posts the <a target="oracle" href="https://en.wikipedia.org/wiki/SOFR">SOFR rate</a> each weekday.<ul>
+        <li>See it live on Alonzo Purple <a target="oracle" href="https://explorer.alonzo-purple.dev.cardano.org/en/transaction?id=77366a7a8d4dccdf27eee4e433d63f2dbf9c5988ab2191df4ae29a81a44c21a8">here</a>. It will migrate to <code>testnet</code> and then <code>mainnet</code> when the Alonzo hard forks occurs there.</li>
+        <li>View the Oracle's source code <a target="oracle" href="https://github.com/functionally/mantis-oracle/blob/main/ReadMe.md">on GitHub</a>.</li>
+        <li>This is a smart-contract version of the <a target="oracle" href="https://mantis.functionally.io">mantis.functionally.io oracle</a> that has been posting transaction metadata continuously since March 2021.</li>
+      </ul></li>
+      <li>We invite SPOs, delegators, and smart-contract developers to propose other information that they would like included in this oracle.</li>
+      <li>We seek <a target="oracle" target="oracle" href="https://pigytoken.com/">PIGY SPOs</a> to collaborate on making the PIGY Oracle a decentralized oracle operated by the PIGY pools.</li>
+    </ul>
+    <img id="example" src="example.png"/>
+    <p>Contact: <a target="oracle" href="mailto:mantis@functionally.io">mantis@functionally.io</a>.</p>
+  </body>
+</html>
