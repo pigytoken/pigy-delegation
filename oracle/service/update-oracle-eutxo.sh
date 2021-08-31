@@ -43,7 +43,7 @@ less $JSON
 
 # Update the oracle's eUXxO.
 
-mantis-oracle write alonzo-purple.mantis-oracle           \
+mantra-oracle write alonzo-purple.mantra-oracle           \
               $(cat keys/alonzo-purple.payment-2.address) \
               keys/alonzo-purple.payment-2.skey           \
               on-chain.json                               \

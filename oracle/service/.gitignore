@@ -5,4 +5,4 @@ on-chain.json
 *.protocol
 tmp-*.json
 tx.*
-mantis-oracle
+mantra-oracle
