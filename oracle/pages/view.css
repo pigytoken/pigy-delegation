@@ -14,6 +14,21 @@
 }
 
 
+table {
+  border-style   : solid
+; border-width   : thin
+; border-collapse: collapse
+}
+
+th, td {
+  text-align    : left
+; vertical-align: top
+; border-style  : solid
+; border-width  : thin
+; padding       : 4px
+}
+
+
 a {
   color          : #e85d91ff
 ; text-decoration: none

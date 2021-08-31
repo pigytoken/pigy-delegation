@@ -28,6 +28,12 @@ The service currently posts currency and precious metal spot prices. Here is an 
           { "symbol": "Pt", "value":   1008, "scale":   1, "unit": "USD/ounce" },
           { "symbol": "Pd", "value":   2501, "scale":   1, "unit": "USD/ounce" }
         ]
+      },
+      "sofr" : {
+        "source": "https://www.newyorkfed.org/markets/reference-rates/sofr",
+        "symbols" : [
+          { "symbol": "SOFR", "value": 5, "scale": 100, "unit": "%" }
+        ]
       }
     }
 
@@ -42,6 +48,7 @@ Because Plutus does not have a data type for real (floating point) numbers, the 
 | Ag (Silver)    |    23.92 USD/ounce  |
 | Pt (Platinum)  |  1008    USD/ounce  |
 | Pd (Palladium) |  2501    USD/ounce  |
+| SOFR           | 0.05%               |
 
 
 Reading the Oracle

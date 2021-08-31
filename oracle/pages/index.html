@@ -12,6 +12,24 @@
     <p>The PIGY Oracle is a general-purpose Cardano <a target="oracle" href="https://en.wikipedia.org/wiki/Blockchain_oracle">oracle</a> that posts off-chain information such as interest rates or commodity prices into smart contracts as on-chain data attached to the oracle's eUTxO. The fee for the oracle is paid in <a target="oracle" href="https://pigytoken.com/">PIGY token</a>, not in ADA.</p>
     <ul>
       <li>It currently posts the some currency prices, precious metal prices, and interest rates.<ul>
+        </li>
+        <li>Example data:
+          <table>
+            <thead>
+              <tr><th>Item           </th><th>Price                </th><th>Source</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>EUR            </td><td>     0.84604 EUR/USD </td><td rowspan="7">https://notnullsolutions.com/</td></tr>
+              <tr><td>GBP            </td><td>     0.72662 GBP/USD </td></tr>
+              <tr><td>IDR            </td><td> 14253.95    IDR/USD </td></tr>
+              <tr><td>Au (Gold)      </td><td>  1803.98 USD/ounce  </td></tr>
+              <tr><td>Ag (Silver)    </td><td>    23.92 USD/ounce  </td></tr>
+              <tr><td>Pt (Platinum)  </td><td>  1008    USD/ounce  </td></tr>
+              <tr><td>Pd (Palladium) </td><td>  2501    USD/ounce  </td></tr>
+              <tr><td>SOFR           </td><td>  0.05%              </td><td>https://www.newyorkfed.org/markets/reference-rates/sofr</td></tr>
+            </tbody>
+          </table>
+        </li>
         <li>Read <a href="https://github.com/functionally/pigy-delegation/blob/main/oracle/service/ReadMe.md">the instructions</a> for using the oracle. It will migrate to <code>testnet</code> and then <code>mainnet</code> when the Alonzo hard forks occurs there.</li>
         <li>View the Oracle's source code <a target="oracle" href="https://github.com/functionally/mantis-oracle/blob/main/ReadMe.md">on GitHub</a>.</li>
         <li>This is a smart-contract version of the <a target="oracle" href="https://mantis.functionally.io">mantis.functionally.io oracle</a> that has been posting transaction metadata continuously since March 2021.</li>
