@@ -29,8 +29,8 @@ The service currently posts currency and precious metal spot prices. Here is [an
           { "symbol": "Pd", "value":   2483, "scale":   1, "unit": "USD/ounce" }
         ]
       },
-      "sofr": {
-        "source": "https://www.newyorkfed.org/markets/reference-rates/sofr",
+      "nyfed": {
+        "source": "https://www.newyorkfed.org/markets",
         "symbols": [
           { "symbol": "SOFR", "value": 5, "scale": 100, "unit": "%" }
         ]

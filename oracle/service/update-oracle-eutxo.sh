@@ -33,7 +33,7 @@ curl --request GET \
 | jq '.rates | {timestamp : "'$TIMESTAMP'", service : "https://oracle.pigytoken.com", currencies : {source : "https://notnullsolutions.com", symbols: [{symbol : "EUR", value : (100000 * .EUR) | round, scale : 100000, unit: "EUR/USD"}, {symbol : "GBP", value : (100000 * .GBP) | round, scale : 100000, unit: "GBP/USD"}, {symbol : "IDR", value : (100 * .IDR) | round, scale : 100, unit: "IDR/USD"}]}, metals : {source : "https://notnullsolutions.com", symbols: [{symbol : "Au", value : (100 * .XAU) | round, scale : 100, unit : "USD/ounce"}, {symbol : "Ag", value : (100 * .XAG) | round, scale : 100, unit : "USD/ounce"}, {symbol : "Pt", value : .PL | round, scale : 1, unit : "USD/ounce"}, {symbol : "Pd", value : .PA | round, scale : 1, unit : "USD/ounce"}]}}' > $JSON_1
 
 curl -s 'https://markets.newyorkfed.org/api/rates/secured/sofr/last/1.json'  \
-| jq '.refRates[] | {sofr: {source: "https://www.newyorkfed.org/markets/reference-rates/sofr", symbols: [{symbol: "SOFR", value: (100 * .percentRate) | round, scale: 100, unit: "%"}]}}' \
+| jq '.refRates[] | {nyfed: {source: "https://www.newyorkfed.org/markets/reference-rates/sofr", symbols: [{symbol: "SOFR", value: (100 * .percentRate) | round, scale: 100, unit: "%"}]}}' \
 > $JSON_2
 
 jq -s add $JSON_1 $JSON_2 > $JSON
