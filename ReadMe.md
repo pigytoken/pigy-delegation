@@ -1,2 +1,2 @@
-Scripts for querying PIGY delegation and token
-==============================================
+PIGY Token Services
+===================
