@@ -23,6 +23,11 @@ JSON_2=tmp-2.json
 JSON=$DIR/$TIMESTAMP.json
 
 
+# Export the Plutus script.
+
+mantra-oracle export testnet.mantra-oracle testnet.plutus
+
+
 # Fetch the data.
 
 # FIXME: Move the fetching code into Haskell.
@@ -44,10 +49,9 @@ less $JSON
 
 # Update the oracle's eUXxO.
 
-mantra-oracle write testnet.mantra-oracle                 \
+mantra-oracle create testnet.mantra-oracle                \
               $(cat keys/alonzo-purple.payment-2.address) \
               keys/alonzo-purple.payment-2.skey           \
-              on-chain.json                               \
               $JSON                                       \
               --metadata 247428
 
