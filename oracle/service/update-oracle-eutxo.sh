@@ -27,7 +27,7 @@ JSON=$DIR/$TIMESTAMP.json
 
 # FIXME: Move the fetching code into Haskell.
 
-curl --request GET \
+curl -s --request GET \
      --url "https://live-metal-prices.p.rapidapi.com/v1/latest/XAU,XAG,PL,PA,USD,EUR,GBP,IDR/USD" \
      --header "x-rapidapi-host: live-metal-prices.p.rapidapi.com" \
      --header "x-rapidapi-key: $(cat rapidapi.secret)" \
