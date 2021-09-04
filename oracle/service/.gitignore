@@ -1,6 +1,6 @@
 keys/
 ipfs.path
-rapidapi.secret
+*.secret
 on-chain.json
 *.protocol
 tmp-*.json

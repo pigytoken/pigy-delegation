@@ -13,48 +13,43 @@ Data Format
 
 In addition to being posted on the blockchain as eUTxO data at the smart-contract address [`addr_test1wquuc74u5r702y8jpazgm3nusse6jaj68cm2xqyzyqhyu8g25ysjg`](https://explorer.cardano-testnet.iohkdev.io/en/address?address=addr_test1wquuc74u5r702y8jpazgm3nusse6jaj68cm2xqyzyqhyu8g25ysjg), for convenience the data is also posted in the eUTxO as metadata with tag 247428 and at [ipns://k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray](http://gateway.pinata.cloud/ipns/k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray).
 
-The service currently posts currency and precious metal spot prices. Here is [an example](https://explorer.cardano-testnet.iohkdev.io/en/transaction?id=d0cca8b82263a4c1ad2c4f845ab58ed5610fdb1fcbe76faa92d19ef5aa2655b2):
+The service currently posts cryptocurrency and precious metal spot prices. Here is [an example](https://explorer.cardano-testnet.iohkdev.io/en/transaction?id=7998106713bb34cb41e15735ec1c2352954ed7e3c8eab7329bd55e29a352bd28):
 
     {
-      "timestamp": "2021-09-01T20:44:32+00:00",
-      "service": "https://oracle.pigytoken.com",
-      "currencies": {
-        "source": "https://notnullsolutions.com",
-        "symbols": [
-          { "symbol": "EUR", "value":   84470, "scale": 100000, "unit": "EUR/USD" },
-          { "symbol": "GBP", "value":   72632, "scale": 100000, "unit": "GBP/USD" },
-          { "symbol": "IDR", "value": 1424895, "scale":    100, "unit": "IDR/USD" }
-        ]
-      },
-      "metals": {
-        "source": "https://notnullsolutions.com",
-        "symbols": [
-          { "symbol": "Au", "value": 181367, "scale": 100, "unit": "USD/ounce" },
-          { "symbol": "Ag", "value":   2416, "scale": 100, "unit": "USD/ounce" },
-          { "symbol": "Pt", "value":   1007, "scale":   1, "unit": "USD/ounce" },
-          { "symbol": "Pd", "value":   2451, "scale":   1, "unit": "USD/ounce" }
-        ]
-      },
-      "nyfed": {
-        "source": "https://www.newyorkfed.org/markets/reference-rates/sofr",
-        "symbols": [
-          { "symbol": "SOFR", "value": 5, "scale": 100, "unit": "%" }
-        ]
+      "oracle": "https://oracle.pigytoken.com",
+      "timestamp": "2021-09-04T16:30:16+00:00",
+      "data": {
+        "nyfed": {
+          "source": "https://www.newyorkfed.org",
+          "symbols": {
+            "SOFR": { "date": "2021-09-02", "value": 5, "scale": 100, "unit": "%", "url": "https://markets.newyorkfed.org/api/rates/secured/sofr" }
+          }
+        },
+        "quandl": {
+          "source": "https://www.quandl.com/",
+          "symbols": {
+            "LBMA/GOLD/PM"       : { "date": "2021-09-03", "value": 182370, "scale":       100, "unit": "USD/ounce", "url": "https://www.quandl.com/api/v3/datasets/LBMA/GOLD"       },
+            "LBMA/SILVER"        : { "date": "2021-09-03", "value":  24055, "scale":      1000, "unit": "USD/ounce", "url": "https://www.quandl.com/api/v3/datasets/LBMA/SILVER"     },
+            "BITFINEX/ADAUSD/Mid": { "date": "2021-09-03", "value": 294015, "scale":    100000, "unit": "ADA/USD"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/ADAUSD" },
+            "BITFINEX/ADABTC/Mid": { "date": "2021-09-03", "value":   5916, "scale": 100000000, "unit": "ADA/BTC"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/ADABTC" },
+            "BITFINEX/BTCUSD/Mid": { "date": "2021-09-03", "value": 497545, "scale":        10, "unit": "BTC/USD"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/BTCUSD" },
+            "BITFINEX/BTCEUR/Mid": { "date": "2021-09-03", "value": 418795, "scale":        10, "unit": "BTC/EUR"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/BTCEUR" }
+          }
+        }
       }
     }
 
 Because Plutus does not have a data type for real (floating point) numbers, the prices are represented as a value divided by a scale. Here is how to interpret the example above:
 
-| Item           | Price               |
-|----------------|--------------------:|
-| EUR            |     0.84470 EUR/USD |
-| GBP            |     0.72632 GBP/USD |
-| IDR            | 14248955    IDR/USD |
-| Au (Gold)      |  1813.67 USD/ounce  |
-| Ag (Silver)    |    24.16 USD/ounce  |
-| Pt (Platinum)  |  1007    USD/ounce  |
-| Pd (Palladium) |  2451    USD/ounce  |
-| SOFR           |     0.05%           |
+| Symbol              | Description                      | Value            |                                                                                      |
+|---------------------|----------------------------------|-----------------:|--------------------------------------------------------------------------------------|
+| SOFR                | Secured Overnight Financing Rate |     0.05%      | [New York Federal Reserve Bank](https://www.newyorkfed.org)                            |
+| LBMA/GOLD/PM        | Gold Price                       |  1823.70       | [Quandl + LBMA](https://www.quandl.com/data/LBMA/GOLD-Gold-Price-London-Fixing)        |
+| LBMA/SILVER         | Silver Price                     |    24.055      | [Quandl + LBMA](https://www.quandl.com/data/LBMA/SILVER-Silver-Price-London-Fixing)    |
+| BITFINEX/ADAUSD/Mid | ADA Price in USD                 |     2.94015    | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/ADAUSD-ADA-USD-Exchange-Rate) |
+| BITFINEX/ADABTC/Mid | ADA Price in BTC                 |     0.00005916 | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/ADABTC-ADA-BTC-Exchange-Rate) |
+| BITFINEX/BTCUSD/Mid | BTC Price in USD                 | 49754.5        | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/BTCUSD-BTC-USD-Exchange-Rate) |
+| BITFINEX/BTCEUR/Mid | BTC Price in EUR                 | 41879.5        | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/BTCEUR-BTC-EUR-Exchange-Rate) |
 
 
 Technical Details
