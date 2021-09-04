@@ -5,7 +5,7 @@ The PIGY Oracle is a community-driven, lowest cost oracle to benefit SPOs. See h
 
 This oracle service (a Plutus smart contract) ran on Alonzo Purple, is now running on the Cardano TestNet, and will migrate to the Cardano MainNet immediately after the Alonzo HFC event. To the extent feasible, we will freely add community-nominated data sources to the PIGY Oracle. We have completely open-sourced the on- and off-chain code so that the Cardano community can easily deploy their own customized oracles for whatever data feeds they wish.
 
-![Example Transaction using the PIGY Oracle](../pages/example.png)
+![Example Transaction using the PIGY Oracle](example.png)
 
 
 Data Format
