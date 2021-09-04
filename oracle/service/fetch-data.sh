@@ -19,19 +19,19 @@ curl -s 'https://www.quandl.com/api/v3/datasets/LBMA/SILVER?limit=1&api_key='$QU
 > tmp/quandl-silver.json
 
 curl -s 'https://www.quandl.com/api/v3/datasets/BITFINEX/ADAUSD?limit=1&api_key='$QUANDL_SECRET \
-| jq '.dataset | .data | .[0] | {"BITFINEX/ADAUSD/Mid" : {url: "https://www.quandl.com/api/v3/datasets/BITFINEX/ADAUSD", date: .[0], value: (100000 * .[3]) | round, scale: 100000, unit: "ADA/USD"}}' \
+| jq '.dataset | .data | .[0] | {"BITFINEX/ADAUSD/Mid" : {url: "https://www.quandl.com/api/v3/datasets/BITFINEX/ADAUSD", date: .[0], value: (100000 * .[3]) | round, scale: 100000, unit: "USD/ADA"}}' \
 > tmp/quandl-adausd.json
 
 curl -s 'https://www.quandl.com/api/v3/datasets/BITFINEX/ADABTC?limit=1&api_key='$QUANDL_SECRET \
-| jq '.dataset | .data | .[0] | {"BITFINEX/ADABTC/Mid" : {url: "https://www.quandl.com/api/v3/datasets/BITFINEX/ADABTC", date: .[0], value: (100000000 * .[3]) | round, scale: 100000000, unit: "ADA/BTC"}}' \
+| jq '.dataset | .data | .[0] | {"BITFINEX/ADABTC/Mid" : {url: "https://www.quandl.com/api/v3/datasets/BITFINEX/ADABTC", date: .[0], value: (100000000 * .[3]) | round, scale: 100000000, unit: "BTC/ADA"}}' \
 > tmp/quandl-adabtc.json
 
 curl -s 'https://www.quandl.com/api/v3/datasets/BITFINEX/BTCUSD?limit=1&api_key='$QUANDL_SECRET \
-| jq '.dataset | .data | .[0] | {"BITFINEX/BTCUSD/Mid" : {url: "https://www.quandl.com/api/v3/datasets/BITFINEX/BTCUSD", date: .[0], value: (10 * .[3]) | round, scale: 10, unit: "BTC/USD"}}' \
+| jq '.dataset | .data | .[0] | {"BITFINEX/BTCUSD/Mid" : {url: "https://www.quandl.com/api/v3/datasets/BITFINEX/BTCUSD", date: .[0], value: (10 * .[3]) | round, scale: 10, unit: "USD/BTC"}}' \
 > tmp/quandl-btcusd.json
 
 curl -s 'https://www.quandl.com/api/v3/datasets/BITFINEX/BTCEUR?limit=1&api_key='$QUANDL_SECRET \
-| jq '.dataset | .data | .[0] | {"BITFINEX/BTCEUR/Mid" : {url: "https://www.quandl.com/api/v3/datasets/BITFINEX/BTCEUR", date: .[0], value: (10 * .[3]) | round, scale: 10, unit: "BTC/EUR"}}' \
+| jq '.dataset | .data | .[0] | {"BITFINEX/BTCEUR/Mid" : {url: "https://www.quandl.com/api/v3/datasets/BITFINEX/BTCEUR", date: .[0], value: (10 * .[3]) | round, scale: 10, unit: "EUR/BTC"}}' \
 > tmp/quandl-btceur.json
 
 jq -s 'add | {"quandl": {source: "https://www.quandl.com/", symbols: .}}' tmp/quandl-*.json > tmp/quandl.json

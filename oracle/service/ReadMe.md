@@ -13,7 +13,7 @@ Data Format
 
 In addition to being posted on the blockchain as eUTxO data at the smart-contract address [`addr_test1wquuc74u5r702y8jpazgm3nusse6jaj68cm2xqyzyqhyu8g25ysjg`](https://explorer.cardano-testnet.iohkdev.io/en/address?address=addr_test1wquuc74u5r702y8jpazgm3nusse6jaj68cm2xqyzyqhyu8g25ysjg), for convenience the data is also posted in the eUTxO as metadata with tag 247428 and at [ipns://k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray](http://gateway.pinata.cloud/ipns/k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray).
 
-The service currently posts cryptocurrency and precious metal spot prices. Here is [an example](https://explorer.cardano-testnet.iohkdev.io/en/transaction?id=7998106713bb34cb41e15735ec1c2352954ed7e3c8eab7329bd55e29a352bd28):
+The service currently posts cryptocurrency and precious metal spot prices. Here is [an example](https://explorer.cardano-testnet.iohkdev.io/en/transaction?id=4e488b6c986dfb76a3350c1bfd4246b8ec87b29c6a18d0733ca03c633ced5a5c):
 
     {
       "oracle": "https://oracle.pigytoken.com",
@@ -30,10 +30,10 @@ The service currently posts cryptocurrency and precious metal spot prices. Here 
           "symbols": {
             "LBMA/GOLD/PM"       : { "date": "2021-09-03", "value": 182370, "scale":       100, "unit": "USD/ounce", "url": "https://www.quandl.com/api/v3/datasets/LBMA/GOLD"       },
             "LBMA/SILVER"        : { "date": "2021-09-03", "value":  24055, "scale":      1000, "unit": "USD/ounce", "url": "https://www.quandl.com/api/v3/datasets/LBMA/SILVER"     },
-            "BITFINEX/ADAUSD/Mid": { "date": "2021-09-03", "value": 294015, "scale":    100000, "unit": "ADA/USD"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/ADAUSD" },
-            "BITFINEX/ADABTC/Mid": { "date": "2021-09-03", "value":   5916, "scale": 100000000, "unit": "ADA/BTC"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/ADABTC" },
-            "BITFINEX/BTCUSD/Mid": { "date": "2021-09-03", "value": 497545, "scale":        10, "unit": "BTC/USD"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/BTCUSD" },
-            "BITFINEX/BTCEUR/Mid": { "date": "2021-09-03", "value": 418795, "scale":        10, "unit": "BTC/EUR"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/BTCEUR" }
+            "BITFINEX/ADAUSD/Mid": { "date": "2021-09-03", "value": 294015, "scale":    100000, "unit": "USD/ADA"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/ADAUSD" },
+            "BITFINEX/ADABTC/Mid": { "date": "2021-09-03", "value":   5916, "scale": 100000000, "unit": "BTC/ADA"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/ADABTC" },
+            "BITFINEX/BTCUSD/Mid": { "date": "2021-09-03", "value": 497545, "scale":        10, "unit": "USD/BTC"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/BTCUSD" },
+            "BITFINEX/BTCEUR/Mid": { "date": "2021-09-03", "value": 418795, "scale":        10, "unit": "EUR/BTC"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/BTCEUR" }
           }
         }
       }
@@ -41,15 +41,15 @@ The service currently posts cryptocurrency and precious metal spot prices. Here 
 
 Because Plutus does not have a data type for real (floating point) numbers, the prices are represented as a value divided by a scale. Here is how to interpret the example above:
 
-| Symbol              | Description                      | Value            |                                                                                      |
-|---------------------|----------------------------------|-----------------:|--------------------------------------------------------------------------------------|
-| SOFR                | Secured Overnight Financing Rate |     0.05%      | [New York Federal Reserve Bank](https://www.newyorkfed.org)                            |
-| LBMA/GOLD/PM        | Gold Price                       |  1823.70       | [Quandl + LBMA](https://www.quandl.com/data/LBMA/GOLD-Gold-Price-London-Fixing)        |
-| LBMA/SILVER         | Silver Price                     |    24.055      | [Quandl + LBMA](https://www.quandl.com/data/LBMA/SILVER-Silver-Price-London-Fixing)    |
-| BITFINEX/ADAUSD/Mid | ADA Price in USD                 |     2.94015    | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/ADAUSD-ADA-USD-Exchange-Rate) |
-| BITFINEX/ADABTC/Mid | ADA Price in BTC                 |     0.00005916 | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/ADABTC-ADA-BTC-Exchange-Rate) |
-| BITFINEX/BTCUSD/Mid | BTC Price in USD                 | 49754.5        | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/BTCUSD-BTC-USD-Exchange-Rate) |
-| BITFINEX/BTCEUR/Mid | BTC Price in EUR                 | 41879.5        | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/BTCEUR-BTC-EUR-Exchange-Rate) |
+| Symbol              | Description                      | Value                    |                                                                                        |
+|---------------------|----------------------------------|-------------------------:|----------------------------------------------------------------------------------------|
+| SOFR                | Secured Overnight Financing Rate |     0.05       %         | [New York Federal Reserve Bank](https://www.newyorkfed.org)                            |
+| LBMA/GOLD/PM        | Gold Price                       |  1823.70       USD/ounce | [Quandl + LBMA](https://www.quandl.com/data/LBMA/GOLD-Gold-Price-London-Fixing)        |
+| LBMA/SILVER         | Silver Price                     |    24.055      USD/ounce | [Quandl + LBMA](https://www.quandl.com/data/LBMA/SILVER-Silver-Price-London-Fixing)    |
+| BITFINEX/ADAUSD/Mid | ADA Price in USD                 |     2.94015    USD/ADA   | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/ADAUSD-ADA-USD-Exchange-Rate) |
+| BITFINEX/ADABTC/Mid | ADA Price in BTC                 |     0.00005916 BTC/ADA   | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/ADABTC-ADA-BTC-Exchange-Rate) |
+| BITFINEX/BTCUSD/Mid | BTC Price in USD                 | 49754.5        USD/BTC   | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/BTCUSD-BTC-USD-Exchange-Rate) |
+| BITFINEX/BTCEUR/Mid | BTC Price in EUR                 | 41879.5        EUR/BTC   | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/BTCEUR-BTC-EUR-Exchange-Rate) |
 
 
 Technical Details
