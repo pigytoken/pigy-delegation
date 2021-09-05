@@ -51,6 +51,8 @@ Because Plutus does not have a data type for real (floating point) numbers, the 
 | BITFINEX/BTCUSD/Mid | BTC Price in USD                 | 49754.5        USD/BTC   | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/BTCUSD-BTC-USD-Exchange-Rate) |
 | BITFINEX/BTCEUR/Mid | BTC Price in EUR                 | 41879.5        EUR/BTC   | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/BTCEUR-BTC-EUR-Exchange-Rate) |
 
+Archives are data posted by the oracle are available at [ipns://k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray](http://gateway.pinata.cloud/ipns/k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray).
+
 
 Technical Details
 -----------------
