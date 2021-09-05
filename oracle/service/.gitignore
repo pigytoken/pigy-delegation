@@ -1,8 +1,0 @@
-keys/
-ipfs.path
-*.secret
-on-chain.json
-*.protocol
-tmp-*.json
-tx.*
-mantra-oracle

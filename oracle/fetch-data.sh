@@ -4,7 +4,7 @@ set -e
 
 TIMESTAMP=$(date --utc --rfc-3339=seconds | sed -e 's/ /T/')
 
-DIR=../data
+DIR=data
 
 JSON=$DIR/$TIMESTAMP.json
 

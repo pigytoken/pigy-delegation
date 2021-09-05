@@ -14,7 +14,12 @@ export PATH=.:$PATH
 
 export IPFS_PATH=$(cat ipfs.path)
 
-DIR=../data
+DIR=data
+
+
+# Export the Plutus script.
+
+mantra-oracle export testnet.mantra-oracle testnet.plutus
 
 
 # Fetch the data.
@@ -27,10 +32,9 @@ less $JSON
 
 # Update the oracle's eUXxO.
 
-mantra-oracle write testnet.mantra-oracle                 \
+mantra-oracle create testnet.mantra-oracle                \
               $(cat keys/alonzo-purple.payment-2.address) \
               keys/alonzo-purple.payment-2.skey           \
-              on-chain.json                               \
               $JSON                                       \
               --metadata 247428
 
