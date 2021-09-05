@@ -40,7 +40,7 @@ curl -s 'https://www.quandl.com/api/v3/datasets/BITFINEX/BTCEUR?limit=1&api_key=
 | jq '.dataset | .data | .[0] | {"BITFINEX/BTCEUR/Mid" : {url: "https://www.quandl.com/api/v3/datasets/BITFINEX/BTCEUR", date: .[0], value: (10 * .[3]) | round, scale: 10, unit: "EUR/BTC"}}' \
 > tmp/quandl-btceur.json
 
-jq -s 'add | {"quandl": {source: "https://www.quandl.com/", symbols: .}}' \
+jq -s 'add | {"quandl": {source: "https://www.quandl.com", symbols: .}}' \
   tmp/quandl-gold.json   \
   tmp/quandl-silver.json \
   tmp/quandl-adausd.json \
