@@ -54,7 +54,7 @@ curl -s 'https://markets.newyorkfed.org/api/rates/secured/sofr/last/1.json'  \
 | jq '.refRates[] | {nyfed: {source: "https://www.newyorkfed.org", symbols: {"SOFR": {url: "https://markets.newyorkfed.org/api/rates/secured/sofr", date: .effectiveDate, value: (100 * .percentRate) | round, scale: 100, unit: "%"}}}}' \
 > tmp/nyfed.json
 
-jq -s 'add | {oracle: "https://oracle.pigytoken.com", timestamp : "'$TIMESTAMP'", data: .}' \
+jq -s 'add | {disclaimer: "ipfs://QmccBPKZqh9BJTJpC8oM6rc4gBrpcVXqcixX9KCsE6yDKd", oracle: "https://oracle.pigytoken.com", timestamp : "'$TIMESTAMP'", data: .}' \
   tmp/nyfed.json  \
   tmp/quandl.json \
 > $JSON

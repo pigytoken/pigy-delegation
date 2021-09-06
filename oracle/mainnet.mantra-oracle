@@ -1,11 +1,11 @@
 Configuration
 {
-  socketPath     = "/data/testnet.socket"
-, magic          = Just 1097911063
+  socketPath     = "/data/mainnet.socket"
+, magic          = Nothing
 , epochSlots     = 21600
 , controlAsset   = "fb353334ac071f79f6d938e0972640a6b6650815124e9d63fbc0b5e8.CORN"
 , datumAsset     = "fb353334ac071f79f6d938e0972640a6b6650815124e9d63fbc0b5e8.FARM"
-, feeAsset       = "8bb3b343d8e404472337966a722150048c768d0a92a9813596c5338d.tPIGY"
+, feeAsset       = "2aa9c1557fcf8e7caa049fa0911a8724a1cdaf8037fe0b431c6ac664.PIGYToken"
 , feeAmount      = 10
 , lovelaceAmount = 0
 }
