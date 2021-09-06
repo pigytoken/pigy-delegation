@@ -57,7 +57,7 @@ Archives are data posted by the oracle are available at [ipns://k51qzi5uqu5dgsw6
 Technical Details
 -----------------
 
-See [`mantra-oracle`](https://github.com/functionally/mantra-oracle/blob/main/ReadMe.md) for complete technical details and source code.
+See [`mantra-oracle`](https://github.com/functionally/mantis-oracle/blob/main/ReadMe.md) for complete technical details and source code.
 
 The oracle users three types of native tokens:
 
@@ -69,9 +69,9 @@ The oracle users three types of native tokens:
 Reading the Oracle Datum
 ------------------------
 
-On the Cardano TestNet, the oracle resides at [`addr_test1wquuc74u5r702y8jpazgm3nusse6jaj68cm2xqyzyqhyu8g25ysjg`](https://explorer.cardano-testnet.iohkdev.io/en/address?address=addr_test1wquuc74u5r702y8jpazgm3nusse6jaj68cm2xqyzyqhyu8g25ysjg). The compiled Plutus code for the oracle is in [testnet.plutus](testnet.plutus). The source code is in the [`mantra-oracle`](https://github.com/functionally/mantra-oracle/blob/main/ReadMe.md) Haskell package.
+On the Cardano TestNet, the oracle resides at [`addr_test1wquuc74u5r702y8jpazgm3nusse6jaj68cm2xqyzyqhyu8g25ysjg`](https://explorer.cardano-testnet.iohkdev.io/en/address?address=addr_test1wquuc74u5r702y8jpazgm3nusse6jaj68cm2xqyzyqhyu8g25ysjg). The compiled Plutus code for the oracle is in [testnet.plutus](testnet.plutus). The source code is in the [`mantra-oracle`](https://github.com/functionally/mantis-oracle/blob/main/ReadMe.md) Haskell package.
 
-The configuration [testnet.mantra-oracle](testnet.mantra-oracle) requires that `10 tPIGY` tokens be paid to the oracle when reading it and that no ADA may be withdrawn from the oracle when reading it. The datum token is `1 PIGSTY`.
+The configuration [testnet.mantra-oracle](testnet.mantra-oracle) requires that `10 tPIGY` tokens be paid to the oracle when reading it and that no ADA may be withdrawn from the oracle when reading it. The datum token is `1 tFARM`.
 
 Although the oracle is meant to be read by other smart contracts, it can also be read using the [`cardano-cli`](https://github.com/input-output-hk/cardano-node/blob/master/cardano-cli/README.md) tool. See the script [read-oracle-eutxo.sh](read-oracle-eutxo.sh) for an example.
 
@@ -79,7 +79,7 @@ Although the oracle is meant to be read by other smart contracts, it can also be
 Creating the Oracle Datum
 -------------------------
 
-The script [create-oracle-eutxo.sh](create-oracle-eutxo.sh) creates the oracle with new precious metal and currency prices. The control token is `1 FARM`.
+The script [create-oracle-eutxo.sh](create-oracle-eutxo.sh) creates the oracle with new precious metal and currency prices. The control token is `1 tCORN`.
 
 
 Updating the Oracle Datum
