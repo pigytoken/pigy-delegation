@@ -6,7 +6,7 @@ The PIGY Oracle is a community-driven, lowest cost oracle to benefit SPOs. See h
 This oracle service (a Plutus smart contract) ran on Alonzo Purple, is now running on the Cardano TestNet, and will migrate to the Cardano MainNet immediately after the Alonzo HFC event. To the extent feasible, we will freely add community-nominated data sources to the PIGY Oracle. We have completely open-sourced the on- and off-chain code so that the Cardano community can easily deploy their own customized oracles for whatever data feeds they wish.
 
 *   [Data Format](#data-format)
-*   [Technical Details](#techical-details)
+*   [Technical Details](#technical-details)
 *   [Reading the Oracle Datum](#reading-the-oracle-datum)
 *   [Risks](#risks)
 *   [Disclaimer](ipfs/disclaimer.txt)
@@ -66,7 +66,7 @@ Archives of the data posted by the oracle are available at [ipns://k51qzi5uqu5dg
 Technical Details
 -----------------
 
-See [`mantra-oracle`](https://github.com/functionally/mantra-oracle/blob/main/ReadMe.md) for complete technical details and source code.
+See [`mantra-oracle`](https://github.com/functionally/mantis-oracle/blob/main/ReadMe.md) for complete technical details and source code.
 
 The oracle users three types of native tokens:
 
@@ -83,10 +83,10 @@ Here are the tokens used by the two oracles:
 
 The oracle runs on both `testnet` and `mainnet`:
 
-| Network   | Configuration                                   | Address                                                                                                                                                                                             | Plutus Script                                  | Plutus Code                                                                                                                                  |
-|-----------|-------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `testnet` | [testnet.mantra-oracle](testnet.mantra-oracle)] | [`addr_test1wzpw9x08aymg7g50v5fet6hxgf2phwvhum7uq8mvwr0geasgctrpp`](https://explorer.cardano-testnet.iohkdev.io/en/address?address=addr_test1wzpw9x08aymg7g50v5fet6hxgf2phwvhum7uq8mvwr0geasgctrpp) | [oracle.testnet.plutus](oracle.testnet.plutus) | [`Mantra.Oracle`](https://github.com/functionally/mantis-oracle/blob/0748820adf93dfd62c7e3d02b4c9d121b3e45139/src/Mantra/Oracle.hs#L95-L149) |
-| `mainnet` | [mainnet.mantra-oracle](mainnet.mantra-oracle)] | [`addr1w83xtd6pekdv93xkj4qz77a5edyuhcxeuvlwex3xm0afukgj73l65`](https://explorer.cardano-testnet.iohkdev.io/en/address?address=addr1w83xtd6pekdv93xkj4qz77a5edyuhcxeuvlwex3xm0afukgj73l65)           | [oracle.mainnet.plutus](oracle.mainnet.plutus) | [`Mantra.Oracle`](https://github.com/functionally/mantis-oracle/blob/0748820adf93dfd62c7e3d02b4c9d121b3e45139/src/Mantra/Oracle.hs#L95-L149) |
+| Network   | Configuration                                  | Address                                                                                                                                                                                             | Plutus Script                                  | Plutus Code                                                                                                                                  |
+|-----------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| `testnet` | [testnet.mantra-oracle](testnet.mantra-oracle) | [`addr_test1wzpw9x08aymg7g50v5fet6hxgf2phwvhum7uq8mvwr0geasgctrpp`](https://explorer.cardano-testnet.iohkdev.io/en/address?address=addr_test1wzpw9x08aymg7g50v5fet6hxgf2phwvhum7uq8mvwr0geasgctrpp) | [oracle.testnet.plutus](oracle.testnet.plutus) | [`Mantra.Oracle`](https://github.com/functionally/mantis-oracle/blob/0748820adf93dfd62c7e3d02b4c9d121b3e45139/src/Mantra/Oracle.hs#L95-L149) |
+| `mainnet` | [mainnet.mantra-oracle](mainnet.mantra-oracle) | [`addr1w83xtd6pekdv93xkj4qz77a5edyuhcxeuvlwex3xm0afukgj73l65`](https://explorer.cardano-testnet.iohkdev.io/en/address?address=addr1w83xtd6pekdv93xkj4qz77a5edyuhcxeuvlwex3xm0afukgj73l65)           | [oracle.mainnet.plutus](oracle.mainnet.plutus) | [`Mantra.Oracle`](https://github.com/functionally/mantis-oracle/blob/0748820adf93dfd62c7e3d02b4c9d121b3e45139/src/Mantra/Oracle.hs#L95-L149) |
 
 You can verify the above using the following procedure:
 
@@ -126,7 +126,7 @@ Risks
 | Risk           | Mitigation                                                                                                                                                                                                                                                                                                                                   |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Transparency   | 100% of the [source code](https://github.com/functionally/mantis-oracle) and [configuration](.) for the oracle are available online and [signed by the developer](https://api.github.com/users/bwbush/gpg_keys)                                                                                                                              |
-| Integrity      | Users can compare the [primary sources](#data-formats) against the oracle's transactions, or run the [data-retrieval script](fetch-data.sh) themselves and compare those results against the oracle's postings.                                                                                                                              |
+| Integrity      | Users can compare the [primary sources](#data-format) against the oracle's transactions, or run the [data-retrieval script](fetch-data.sh) themselves and compare those results against the oracle's postings.                                                                                                                              |
 | Quality        | The oracle has been thoroughly tested via manual analysis, [a semi-automated exhaustive test suite](https://github.com/functionally/mantis-oracle/blob/main/tests/ReadMe.md), the Plutus simulator, and the Plutus Application Backend.                                                                                                      |
 | Security       | The oracle's active [control token](https://cardanoscan.io/token/441a1e1ad3783507896ef766e98d267c1a2f18cb) is held in a well-secured wallet, and its backup control tokens will be stored in a multisig wallet. The oracle itself is not controlled by signing keys. A copy of the oracle service's Security Plan is available upon request. |
 | Cost           | For each reading by a smart contract, the oracle collects no ADA and 10 [PIGY](https://cardanoscan.io/token/2aa9c1557fcf8e7caa049fa0911a8724a1cdaf8037fe0b431c6ac664.PIGYToken), which is a token readily available from stakepool operations. The network-determined ~0.78 ADA transaction fee must also be paid.                           |
