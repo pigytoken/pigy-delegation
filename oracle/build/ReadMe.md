@@ -276,7 +276,7 @@ Here are the commands used to generate the keypairs for the oracle service, mint
                   --metadata 247428
 
 
-## Test reading the oracle (just on `testnet`).
+## Test reading the oracle.
 
 ### Create an example plutus script that reads the oracle data and tests whether it matches its own redeemer.
 
@@ -351,3 +351,7 @@ Here are the commands used to generate the keypairs for the oracle service, mint
     --------------------------------------------------------------------------------------
     096b9eb1156b4a8d9716191b39613d36703fffef8656cc0e359e0002145c9f83     0        8724941 lovelace + TxOutDatumHashNone
 
+
+## Start routine operations.
+
+Simply run [update-oracle-eutxo.sh](../update-oracle-eutxo.sh) each day.

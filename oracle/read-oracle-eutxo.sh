@@ -17,21 +17,21 @@ cardano-cli query protocol-parameters $MAGIC --out-file testnet.protocol
 
 ### Record the test addresses.
 
-ADDRESS_2=$(cat keys/alonzo-purple.payment-2.address); echo $ADDRESS_2
+ADDRESS_2=$(cat payment.address); echo $ADDRESS_2
 
 
 ### Record the minting policy.
 
-ASSET_CONTROL=469f9a74824555709042fb95aa2d11e3c7fa4eada2fe97bc287687dd.FARM
-ASSET_DATUM=150ee39332bddb6083c2294cedb206aadbf7606e4bf53184fc7e9cad.PIGSTY
+ASSET_CONTROL=fb353334ac071f79f6d938e0972640a6b6650815124e9d63fbc0b5e8.CORN
+ASSET_DATUM=fb353334ac071f79f6d938e0972640a6b6650815124e9d63fbc0b5e8.FARM
 ASSET_FEE=8bb3b343d8e404472337966a722150048c768d0a92a9813596c5338d.tPIGY
 
 
 ### Record the script address.
 
-SCRIPT_FILE=testnet.plutus
+SCRIPT_FILE=oracle.testnet.plutus
 
-ADDRESS_S=$(cardano-cli address build $MAGIC --payment-script-file $SCRIPT_FILE); echo $ADDRESS_S
+ADDRESS_S=$(cardano-cli address build $MAGIC --payment-script-file $SCRIPT_FILE)
 
 
 ### Find the UTxO for the oracle.
@@ -57,7 +57,7 @@ JSON=$(cat on-chain.json | tr -d '\n')
 HASH=$(cardano-cli transaction hash-script-data --script-data-value "$JSON"); echo $HASH
 
 cardano-cli transaction build $MAGIC --alonzo-era \
-  --protocol-params-file alonzo-purple.protocol \
+  --protocol-params-file testnet.protocol \
   --tx-in $TXID_SCRIPT \
     --tx-in-script-file $SCRIPT_FILE \
     --tx-in-datum-value "$JSON" \
@@ -74,7 +74,7 @@ cardano-cli transaction build $MAGIC --alonzo-era \
 cardano-cli transaction sign $MAGIC \
   --tx-body-file tx.raw \
   --out-file tx.signed \
-  --signing-key-file keys/alonzo-purple.payment-2.skey
+  --signing-key-file payment.skey
 
 cardano-cli transaction submit $MAGIC \
   --tx-file tx.signed

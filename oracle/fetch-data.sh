@@ -8,7 +8,7 @@ DIR=data
 
 JSON=$DIR/$TIMESTAMP.json
 
-QUANDL_SECRET=$QUANDL_SECRET
+QUANDL_SECRET=keys/quandl.secret
 
 curl -s 'https://www.quandl.com/api/v3/datasets/LBMA/GOLD?limit=1&api_key='$QUANDL_SECRET \
 | tee tmp/quandl-gold.raw \

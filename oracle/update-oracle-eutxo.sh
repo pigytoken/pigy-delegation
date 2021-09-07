@@ -12,7 +12,7 @@ set -e
 
 export PATH=.:$PATH
 
-export IPFS_PATH=$(cat ipfs.path)
+export IPFS_PATH=$(cat keys/ipfs.path)
 
 DIR=data
 
@@ -27,12 +27,16 @@ less $JSON
 
 # Update the oracle's eUXxO.
 
-mantra-oracle write testnet.mantra-oracle                 \
-              $(cat keys/alonzo-purple.payment-2.address) \
-              keys/alonzo-purple.payment-2.skey           \
-              on-chain.json                               \
-              $JSON                                       \
-              --metadata 247428
+for n in testnet
+do
+  gpg -d ../keys/pigy-oracle-0.skey.asc > ../keys/pigy-oracle-0.skey &
+  mantra-oracle write $n.mantra-oracle                               \
+                $(cat keys/pigy-oracle-0.address)                    \
+                keys/pigy-oracle-0.skey                              \
+                on-chain.json                                        \
+                $JSON                                                \
+                --metadata 247428
+done
 
 cp $JSON on-chain.json
 
