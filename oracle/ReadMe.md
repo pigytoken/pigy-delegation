@@ -11,7 +11,7 @@ This oracle service (a Plutus smart contract) ran on Alonzo Purple, is now runni
 *   [Risks](#risks)
 *   [Disclaimer](ipfs/disclaimer.txt)
 
-Please feel free to [contact us](mailto:code@functionally.io) with questions, concerns, requests for assistance, or Plutus consultation. In particular, we welcome collaboration, the nomination of new data feeds to include in the oracle, additional deployments of this oracle, deployments of competing oracles, and decentralization efforts.
+Please feel free to [contact us](mailto:code@functionally.io) with questions, concerns, requests for assistance, or Plutus consultation. In particular, we welcome collaboration, the nomination of new data feeds to include in the oracle, additional deployments of this oracle, deployments of complementary oracles, and decentralization efforts.
 
 ![Example Transaction using the PIGY Oracle](example.png)
 
@@ -19,7 +19,7 @@ Please feel free to [contact us](mailto:code@functionally.io) with questions, co
 Data Format
 -----------
 
-In addition to being posted on the blockchain as eUTxO data at the smart-contract address [`addr_test1wzpw9x08aymg7g50v5fet6hxgf2phwvhum7uq8mvwr0geasgctrpp`](https://explorer.cardano-testnet.iohkdev.io/en/address?address=addr_test1wzpw9x08aymg7g50v5fet6hxgf2phwvhum7uq8mvwr0geasgctrpp), for convenience the data is also posted in the eUTxO as metadata with tag `247428` and also at [ipns://k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray](http://gateway.pinata.cloud/ipns/k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray).
+In addition to being posted on the blockchain as eUTxO data at the smart-contract address (on `testnet` at [`addr_test1wzpw9x08aymg7g50v5fet6hxgf2phwvhum7uq8mvwr0geasgctrpp`](https://explorer.cardano-testnet.iohkdev.io/en/address?address=addr_test1wzpw9x08aymg7g50v5fet6hxgf2phwvhum7uq8mvwr0geasgctrpp)), for convenience the data is also posted in the eUTxO as metadata with tag `247428` and also at [ipns://k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray](http://gateway.pinata.cloud/ipns/k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray).
 
 The service currently posts cryptocurrency and precious metal spot prices. Here is [an example](https://explorer.cardano-testnet.iohkdev.io/en/transaction?id=7832efcc4ff87cbb479dd7d84afdc1b2763fa26536d2d2a9dabb8875e7a1c064):
 
@@ -68,7 +68,7 @@ Technical Details
 
 See [`mantra-oracle`](https://github.com/functionally/mantis-oracle/blob/main/ReadMe.md) for complete technical details and source code.
 
-The oracle users three types of native tokens:
+The oracle uses three types of native tokens:
 
 *   The **fee** token: Each time another smart contract reads data from the oracle, it needs to pay a quantity of the *fee token* to the oracle contract.
 *   The **datum** token: The oracle always has at its address an eUTxO that holds the *datum token*, and the oracle's data is attached to this eUTxO.
@@ -76,10 +76,10 @@ The oracle users three types of native tokens:
 
 Here are the tokens used by the two oracles:
 
-| Network   | Control Token                                                                         | Datum Token                                                                           | Fee for Using Oracle                                                                                                    |
-|-----------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| `testnet` | [CORN](https://testnet.cardanoscan.io/token/441a1e1ad3783507896ef766e98d267c1a2f18cb) | [FARM](https://testnet.cardanoscan.io/token/3f638d4277da839ff6afc03a5a403dad48c94b9d) | 10 [tPIGY](https://testnet.cardanoscan.io/token/8bb3b343d8e404472337966a722150048c768d0a92a9813596c5338d.tPIGY) + 0 ADA |
-| `mainnet` | [CORN](https://cardanoscan.io/token/441a1e1ad3783507896ef766e98d267c1a2f18cb)         | [FARM](https://cardanoscan.io/token/3f638d4277da839ff6afc03a5a403dad48c94b9d)         | 10 [PIGY](https://cardanoscan.io/token/2aa9c1557fcf8e7caa049fa0911a8724a1cdaf8037fe0b431c6ac664.PIGYToken) + 0 ADA      |
+| Network   | Control Token                                                                           | Datum Token                                                                             | Fee for Using Oracle                                                                                                      |
+|-----------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| `testnet` | [`CORN`](https://testnet.cardanoscan.io/token/441a1e1ad3783507896ef766e98d267c1a2f18cb) | [`FARM`](https://testnet.cardanoscan.io/token/3f638d4277da839ff6afc03a5a403dad48c94b9d) | 10 [`tPIGY`](https://testnet.cardanoscan.io/token/8bb3b343d8e404472337966a722150048c768d0a92a9813596c5338d.tPIGY) + 0 ADA |
+| `mainnet` | [`CORN`](https://cardanoscan.io/token/441a1e1ad3783507896ef766e98d267c1a2f18cb)         | [`FARM`](https://cardanoscan.io/token/3f638d4277da839ff6afc03a5a403dad48c94b9d)         | 10 [`PIGY`](https://cardanoscan.io/token/2aa9c1557fcf8e7caa049fa0911a8724a1cdaf8037fe0b431c6ac664.PIGYToken) + 0 ADA      |
 
 The oracle runs on both `testnet` and `mainnet`:
 
@@ -93,6 +93,7 @@ You can verify the above using the following procedure:
 1.  Install the Haskell package [`mantra-oracle-0.3.2.0`](https://github.com/functionally/mantis-oracle/tree/0748820adf93dfd62c7e3d02b4c9d121b3e45139).
     
 2.  Run the following to create the Plutus scripts and addresses:
+        
         mantra-oracle export testnet.mantra-oracle oracle.testnet.plutus
         mantra-oracle export mainnet.mantra-oracle oracle.mainnet.plutus
     
@@ -108,30 +109,31 @@ In order to read the oracle, a transaction must do the following:
 
 *   Consume the oracle eUTxO that holds the `FARM` token.
     *   *Script:* [oracle.testnet.plutus](oracle.testnet.plutus) or [oracle.mainnet.plutus](oracle.mainnet.plutus).
-    *   *Datum:* a copy of the metadata whose hash resides in the eUTxO. It's easiest to compute this hash by looking at the JSON in the tag `247428` of the metadata attached to that eUTxO.
+    *   *Datum:* a copy of the datum whose hash resides in the eUTxO. It's easiest to retrieve this datum by copying the JSON in the tag `247428` of the metadata attached to that eUTxO.
     *   *Redeemer:* the integer `1`, which tells the oracle that the datum is to be read.
 *   Pay back to the oracle's address ([oracle.testnet.address](oracle.testnet.address) or [oracle.mainnet.address](oracle.mainnet.address)) the value consumed from its eUTxO plus *exactly* `10 tPIGY` (on `testnet`) or `10 PIGY` (on `mainnet`).
+    *   *Datum hash:* the same datum hash that was in that eUTxO.
 
 The oracle is meant to be used by another Plutus smart contract. See [Test Reading the Oracle](build/ReadMe.md#test-reading-the-oracle) for a step-by-step recipe for using [an example Plutus script for reading the oracle](https://github.com/functionally/mantis-oracle/blob/0748820adf93dfd62c7e3d02b4c9d121b3e45139/src/Mantra/Oracle/Reader.hs#L58-L94).
 
 Nevertheless, you can also read the oracle data using `cardano-cli`, as shown in the recipe [read-oracle-eutxo.sh](read-oracle-eutxo.sh).
 
-Please [create an issue](https://github.com/functionally/mantis-oracle/issues) or [contact us](mailto:code@functionally.io) if you have questions, concerns, or requests for assistance. We welcome collaboration and the nomination of new data feeds to include in the oracle.
+Please [create an issue](https://github.com/functionally/mantis-oracle/issues) or [contact us](mailto:code@functionally.io) if you have questions, concerns, or requests for assistance. We welcome all collaboration and the nomination of new data feeds to include in the oracle.
 
 
 
 Risks
 -----
 
-| Risk           | Mitigation                                                                                                                                                                                                                                                                                                                                   |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Transparency   | 100% of the [source code](https://github.com/functionally/mantis-oracle) and [configuration](.) for the oracle are available online and [signed by the developer](https://api.github.com/users/bwbush/gpg_keys).                                                                                                                             |
-| Integrity      | Users can compare the [primary sources](#data-format) against the oracle's transactions, or run the [data-retrieval script](fetch-data.sh) themselves and compare those results against the oracle's postings.                                                                                                                               |
-| Quality        | The oracle has been thoroughly tested via manual analysis, [a semi-automated exhaustive test suite](https://github.com/functionally/mantis-oracle/blob/main/tests/ReadMe.md), the Plutus simulator, and the Plutus Application Backend.                                                                                                      |
-| Security       | The oracle's active [control token](https://cardanoscan.io/token/441a1e1ad3783507896ef766e98d267c1a2f18cb) is held in a well-secured wallet, and its backup control tokens will be stored in a multisig wallet. The oracle itself is not controlled by signing keys. A copy of the oracle service's Security Plan is available upon request. |
-| Cost           | For each reading by a smart contract, the oracle collects no ADA and 10 [PIGY](https://cardanoscan.io/token/2aa9c1557fcf8e7caa049fa0911a8724a1cdaf8037fe0b431c6ac664.PIGYToken), which is a token readily available from stakepool operations. The network-determined ~0.78 ADA transaction fee must also be paid.                           |
-| Continuity     | The oracle's transactions fees (~0.78 ADA/day or 285 ADA/year) for its daily postings are funded by ADA donation sufficient to power the oracle until at least until Epoch 360.                                                                                                                                                              |
-| Centralization | We endeavor to decentralize this oracle. Please [contact us](mailto:code@functionally.io) is would you like to collaborate on the decentralization effort or host an addtional instance of the oracle.                                                                                                                                       |
+| Risk           | Mitigation                                                                                                                                                                                                                                                                                                                                                |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Transparency   | 100% of the [source code](https://github.com/functionally/mantis-oracle) and [configuration](.) for the oracle are available online and [signed by the developer](https://api.github.com/users/bwbush/gpg_keys).                                                                                                                                          |
+| Integrity      | Users can compare the [primary sources](#data-format) against the oracle's transactions, or run the [data-retrieval script](fetch-data.sh) themselves and compare those results against the oracle's postings.                                                                                                                                            |
+| Quality        | The oracle has been tested via manual analysis, [a semi-automated exhaustive test suite](https://github.com/functionally/mantis-oracle/blob/main/tests/ReadMe.md), the Plutus simulator, and the Plutus Application Backend.                                                                                                                              |
+| Security       | The oracle's active [control token](https://cardanoscan.io/token/441a1e1ad3783507896ef766e98d267c1a2f18cb) is held in a well-secured wallet, and its four backup control tokens will be stored in a multisig wallet. The oracle itself is not controlled by signing keys. A copy of the oracle service's Security Plan is available upon request.         |
+| Cost           | For each transaction reading the oracle in a smart contract, the oracle collects no ADA and 10 [`PIGY`](https://cardanoscan.io/token/2aa9c1557fcf8e7caa049fa0911a8724a1cdaf8037fe0b431c6ac664.PIGYToken), which is a token readily available from stakepool operators. The reading transaction must pay the network-determined ~0.78 ADA transaction fee. |
+| Continuity     | The transactions fees (~0.78 ADA/day) for the daily updates of the oracle's data are funded by an ADA donation sufficient to power the oracle until at least until Epoch 360.                                                                                                                                                                             |
+| Centralization | We endeavor to decentralize this oracle. Please [contact us](mailto:code@functionally.io) is would you like to collaborate on the decentralization effort or host an addtional instance of the oracle.                                                                                                                                                    |
 
 
 Disclaimer
