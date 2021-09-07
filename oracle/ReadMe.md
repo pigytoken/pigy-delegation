@@ -76,10 +76,10 @@ The oracle uses three types of native tokens:
 
 Here are the tokens used by the two oracles:
 
-| Network   | Control Token                                                                           | Datum Token                                                                             | Fee for Using Oracle                                                                                                      |
-|-----------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| `testnet` | [`CORN`](https://testnet.cardanoscan.io/token/441a1e1ad3783507896ef766e98d267c1a2f18cb) | [`FARM`](https://testnet.cardanoscan.io/token/3f638d4277da839ff6afc03a5a403dad48c94b9d) | 10 [`tPIGY`](https://testnet.cardanoscan.io/token/8bb3b343d8e404472337966a722150048c768d0a92a9813596c5338d.tPIGY) + 0 ADA |
-| `mainnet` | [`CORN`](https://cardanoscan.io/token/441a1e1ad3783507896ef766e98d267c1a2f18cb)         | [`FARM`](https://cardanoscan.io/token/3f638d4277da839ff6afc03a5a403dad48c94b9d)         | 10 [`PIGY`](https://cardanoscan.io/token/2aa9c1557fcf8e7caa049fa0911a8724a1cdaf8037fe0b431c6ac664.PIGYToken) + 0 ADA      |
+| Network   | Control Token                                                                           | Datum Token                                                                             | Fee for Using Oracle                                                                                                        |
+|-----------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| `testnet` | [`CORN`](https://testnet.cardanoscan.io/token/441a1e1ad3783507896ef766e98d267c1a2f18cb) | [`FARM`](https://testnet.cardanoscan.io/token/3f638d4277da839ff6afc03a5a403dad48c94b9d) | 10 [`tPIGY`](https://testnet.cardanoscan.io/token/8bb3b343d8e404472337966a722150048c768d0a92a9813596c5338d.tPIGY) + 0 `ADA` |
+| `mainnet` | [`CORN`](https://cardanoscan.io/token/441a1e1ad3783507896ef766e98d267c1a2f18cb)         | [`FARM`](https://cardanoscan.io/token/3f638d4277da839ff6afc03a5a403dad48c94b9d)         | 10 [`PIGY`](https://cardanoscan.io/token/2aa9c1557fcf8e7caa049fa0911a8724a1cdaf8037fe0b431c6ac664.PIGYToken) + 0 `ADA`      |
 
 The oracle runs on both `testnet` and `mainnet`:
 
