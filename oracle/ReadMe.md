@@ -21,7 +21,7 @@ Data Format
 
 In addition to being posted on the blockchain as eUTxO data at the smart-contract address (on `testnet` at [`addr_test1wzpw9x08aymg7g50v5fet6hxgf2phwvhum7uq8mvwr0geasgctrpp`](https://explorer.cardano-testnet.iohkdev.io/en/address?address=addr_test1wzpw9x08aymg7g50v5fet6hxgf2phwvhum7uq8mvwr0geasgctrpp)), for convenience the data is also posted in the eUTxO as metadata with tag `247428` and also at [ipns://k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray](http://gateway.pinata.cloud/ipns/k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray).
 
-The service currently posts cryptocurrency and precious metal spot prices. Here is [an example](https://explorer.cardano-testnet.iohkdev.io/en/transaction?id=7832efcc4ff87cbb479dd7d84afdc1b2763fa26536d2d2a9dabb8875e7a1c064):
+The service currently posts cryptocurrency and precious metal prices, and an interest rate. Here is [an example](https://explorer.cardano-testnet.iohkdev.io/en/transaction?id=7832efcc4ff87cbb479dd7d84afdc1b2763fa26536d2d2a9dabb8875e7a1c064):
 
     {
       "disclaimer": "ipfs://QmccBPKZqh9BJTJpC8oM6rc4gBrpcVXqcixX9KCsE6yDKd",
@@ -31,7 +31,7 @@ The service currently posts cryptocurrency and precious metal spot prices. Here 
         "nyfed": {
           "source": "https://www.newyorkfed.org",
           "symbols": {
-            "SOFR": { "url": "https://markets.newyorkfed.org/api/rates/secured/sofr", "date": "2021-09-02", "value": 5, "scale": 100, "unit": "%" }
+            "SOFR": { "date": "2021-09-02", "value": 5, "scale": 100, "unit": "%", "url": "https://markets.newyorkfed.org/api/rates/secured/sofr" }
           }
         },
         "quandl": {
@@ -48,7 +48,7 @@ The service currently posts cryptocurrency and precious metal spot prices. Here 
       }
     }
 
-Because Plutus does not have a data type for real (floating point) numbers, the prices are represented as a value divided by a scale. Here is how to interpret the example above:
+Because Plutus does not have a data type for real (floating point) numbers, the prices are represented as a rational number (i.e., a value divided by a scale). Here is how to interpret the example above:
 
 | Symbol              | Description                      | Value                    |                                                                                        |
 |---------------------|----------------------------------|-------------------------:|----------------------------------------------------------------------------------------|
@@ -70,9 +70,9 @@ See [`mantra-oracle`](https://github.com/functionally/mantis-oracle/blob/main/Re
 
 The oracle uses three types of native tokens:
 
-*   The **fee** token: Each time another smart contract reads data from the oracle, it needs to pay a quantity of the *fee token* to the oracle contract.
-*   The **datum** token: The oracle always has at its address an eUTxO that holds the *datum token*, and the oracle's data is attached to this eUTxO.
-*   The **control** token: The operator of the oracle uses the *control token* to update the data in the oracle by sending it in a transaction with new data for the datum token to hold. (This token can also be used to delete the oracle altogether, ending its smart contract.)
+*   *The **fee** token:* Each time another smart contract reads data from the oracle, it needs to pay a quantity of the *fee token* to the oracle contract.
+*   *The **datum** token:* The oracle always has at its address an eUTxO that holds the *datum token*, and the oracle's data hash is attached to this eUTxO.
+*   *The **control** token:* The operator of the oracle uses the *control token* to update the data in the oracle by sending it in a transaction with new data for the datum token to hold. (This token can also be used to delete the oracle altogether, ending its smart contract.)
 
 Here are the tokens used by the two oracles:
 
@@ -109,10 +109,10 @@ In order to read the oracle, a transaction must do the following:
 
 *   Consume the oracle eUTxO that holds the `FARM` token.
     *   *Script:* [oracle.testnet.plutus](oracle.testnet.plutus) or [oracle.mainnet.plutus](oracle.mainnet.plutus).
-    *   *Datum:* a copy of the datum whose hash resides in the eUTxO. It's easiest to retrieve this datum by copying the JSON in the tag `247428` of the metadata attached to that eUTxO.
+    *   *Datum:* a copy of the datum whose hash resides in the eUTxO. It's easiest to retrieve this datum by copying the JSON in the tag `247428` of the metadata attached to that consumed eUTxO's transaction.
     *   *Redeemer:* the integer `1`, which tells the oracle that the datum is to be read.
 *   Pay back to the oracle's address ([oracle.testnet.address](oracle.testnet.address) or [oracle.mainnet.address](oracle.mainnet.address)) the value (including the `FARM` token and any `PIGY` tokens) consumed from its eUTxO plus *exactly* `10 tPIGY` (on `testnet`) or `10 PIGY` (on `mainnet`).
-    *   *Datum hash:* the same datum hash that was in that eUTxO.
+    *   *Datum hash:* the same datum hash that was in that consumed eUTxO.
 
 *It is **critically important** never to send output to any Plutus script unless a datum hash is included in that output; otherwise the output's value will be permanently locked in the script.*
 
