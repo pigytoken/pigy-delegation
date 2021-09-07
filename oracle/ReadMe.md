@@ -1,7 +1,7 @@
 Using the PIGY Oracle Service
 =============================
 
-The PIGY Oracle is a community-driven, lowest cost oracle to benefit SPOs. See https://oracle.pigytoken.com/ for details.
+The PIGY Oracle is a community-driven, minimal-cost oracle to benefit SPOs. See https://oracle.pigytoken.com/ for details.
 
 This oracle service (a Plutus smart contract) ran on Alonzo Purple, is now running on the Cardano TestNet, and will migrate to the Cardano MainNet immediately after the Alonzo HFC event. To the extent feasible, we will freely add community-nominated data sources to the PIGY Oracle. We have completely open-sourced the on- and off-chain code so that the Cardano community can easily deploy their own customized oracles for whatever data feeds they wish.
 
@@ -99,7 +99,7 @@ You can verify the above using the following procedure:
     
 3.  Compare the addresses to the table above.
 
-See [how the oracles were created](build/ReadMe.md) for the step-by-step recipe that was used to bulid the oracles.
+See [how the oracles were created](build/ReadMe.md) for the step-by-step recipe that was used to build the oracles.
 
 
 Reading the Oracle Datum
@@ -111,7 +111,7 @@ In order to read the oracle, a transaction must do the following:
     *   *Script:* [oracle.testnet.plutus](oracle.testnet.plutus) or [oracle.mainnet.plutus](oracle.mainnet.plutus).
     *   *Datum:* a copy of the datum whose hash resides in the eUTxO. It's easiest to retrieve this datum by copying the JSON in the tag `247428` of the metadata attached to that eUTxO.
     *   *Redeemer:* the integer `1`, which tells the oracle that the datum is to be read.
-*   Pay back to the oracle's address ([oracle.testnet.address](oracle.testnet.address) or [oracle.mainnet.address](oracle.mainnet.address)) the value consumed from its eUTxO plus *exactly* `10 tPIGY` (on `testnet`) or `10 PIGY` (on `mainnet`).
+*   Pay back to the oracle's address ([oracle.testnet.address](oracle.testnet.address) or [oracle.mainnet.address](oracle.mainnet.address)) the value (including the `FARM` token and any `PIGY` tokens) consumed from its eUTxO plus *exactly* `10 tPIGY` (on `testnet`) or `10 PIGY` (on `mainnet`).
     *   *Datum hash:* the same datum hash that was in that eUTxO.
 
 The oracle is meant to be used by another Plutus smart contract. See [Test Reading the Oracle](build/ReadMe.md#test-reading-the-oracle) for a step-by-step recipe for using [an example Plutus script for reading the oracle](https://github.com/functionally/mantis-oracle/blob/0748820adf93dfd62c7e3d02b4c9d121b3e45139/src/Mantra/Oracle/Reader.hs#L58-L94).
@@ -119,7 +119,6 @@ The oracle is meant to be used by another Plutus smart contract. See [Test Readi
 Nevertheless, you can also read the oracle data using `cardano-cli`, as shown in the recipe [read-oracle-eutxo.sh](read-oracle-eutxo.sh).
 
 Please [create an issue](https://github.com/functionally/mantis-oracle/issues) or [contact us](mailto:code@functionally.io) if you have questions, concerns, or requests for assistance. We welcome all collaboration and the nomination of new data feeds to include in the oracle.
-
 
 
 Risks
@@ -133,7 +132,7 @@ Risks
 | Security       | The oracle's active [control token](https://cardanoscan.io/token/441a1e1ad3783507896ef766e98d267c1a2f18cb) is held in a well-secured wallet, and its four backup control tokens will be stored in a multisig wallet. The oracle itself is not controlled by signing keys. A copy of the oracle service's Security Plan is available upon request.         |
 | Cost           | For each transaction reading the oracle in a smart contract, the oracle collects no ADA and 10 [`PIGY`](https://cardanoscan.io/token/2aa9c1557fcf8e7caa049fa0911a8724a1cdaf8037fe0b431c6ac664.PIGYToken), which is a token readily available from stakepool operators. The reading transaction must pay the network-determined ~0.78 ADA transaction fee. |
 | Continuity     | The transactions fees (~0.78 ADA/day) for the daily updates of the oracle's data are funded by an ADA donation sufficient to power the oracle until at least until Epoch 360.                                                                                                                                                                             |
-| Centralization | We endeavor to decentralize this oracle. Please [contact us](mailto:code@functionally.io) is would you like to collaborate on the decentralization effort or host an addtional instance of the oracle.                                                                                                                                                    |
+| Centralization | We endeavor to decentralize this oracle. Please [contact us](mailto:code@functionally.io) is would you like to collaborate on the decentralization effort or host an additional instance of the oracle.                                                                                                                                                   |
 
 
 Disclaimer
