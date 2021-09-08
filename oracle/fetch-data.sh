@@ -1,8 +1,15 @@
 #!/usr/bin/env bash
 
+
+# In order to run this script, you need a free API key from https://quandl.com/.
+# Store it in the file ../keys/quandl.secret.
+
+
 set -e
 
 TIMESTAMP=$(date --utc --rfc-3339=seconds | sed -e 's/ /T/')
+
+mkdir -p data tmp
 
 DIR=data
 
