@@ -1,0 +1,14 @@
+{
+  "721": {
+    "fb353334ac071f79f6d938e0972640a6b6650815124e9d63fbc0b5e8": {
+      "FARM": {
+        "name": "FARM",
+        "image": "ipfs://QmcKC57rCAdUdYG6LqkjGzwNECk6xy69Zavm2DmwY8ApQV",
+        "mediaType": "image/png",
+        "description": "Datum token for PIGY Oracle.",
+        "url": "https://oracle.pigytoken.com"
+      }
+    },
+    "version": "1.0"
+  }
+}

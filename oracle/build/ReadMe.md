@@ -159,6 +159,64 @@ Here are the commands used to generate the keypairs for the oracle service, mint
       --tx-file tx.signed
 
 
+## Register the token metadata.
+
+    git clone git@github.com:functionally/cardano-token-registry.git
+    pushd cardano-token-registry
+    nix-shell
+    cd mappings
+    
+    SUBJECT=$CURRENCY$(echo -n CORN | xxd -ps)
+    
+    token-metadata-creator entry --init $SUBJECT
+    
+    token-metadata-creator entry $SUBJECT \
+      --name CORN \
+      --ticker CORN \
+      --description "Control token for PIGY Oracle." \
+      --logo ../../../ipfs/CORN.png \
+      --decimals 0 \
+      --url https://oracle.pigytoken.com \
+      --policy ../../minting-script.json
+    
+    token-metadata-creator entry $SUBJECT \
+       -a ../../../keys/pigy-oracle-0.skey
+    
+    token-metadata-creator entry $SUBJECT \
+      --finalize
+    
+    git commit $SUBJECT.json -m CORN
+    
+    cp $SUBJECT.json ../..
+    
+    SUBJECT=$CURRENCY$(echo -n FARM | xxd -ps)
+    
+    token-metadata-creator entry --init $SUBJECT
+    
+    token-metadata-creator entry $SUBJECT \
+      --name FARM \
+      --ticker FARM \
+      --description "Datum token for PIGY Oracle." \
+      --logo ../../../ipfs/FARM.png \
+      --decimals 0 \
+      --url https://oracle.pigytoken.com \
+      --policy ../../build/minting-script.json
+    
+    token-metadata-creator entry $SUBJECT \
+       -a ../../../keys/pigy-oracle-0.skey
+    
+    token-metadata-creator entry $SUBJECT \
+      --finalize
+    
+    git commit $SUBJECT.json -m FARM
+    
+    cp $SUBJECT.json ../..
+    
+    git push
+    exit
+    popd
+
+
 ## View the eUTxOs available for creating the service.
 
     $ CARDANO_NODE_SOCKET_PATH=/data/testnet.socket cardano-cli query utxo --testnet-magic 1097911063 --address $(cat ../keys/pigy-oracle-0.testnet.address)                                           
