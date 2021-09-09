@@ -29,12 +29,11 @@ less $JSON
 
 for n in testnet
 do
-  gpg -d ../keys/pigy-oracle-0.skey.asc > ../keys/pigy-oracle-0.skey &
-  mantra-oracle write $n.mantra-oracle                               \
-                $(cat keys/pigy-oracle-0.$n.address)                 \
-                keys/pigy-oracle-0.skey                              \
-                on-chain.json                                        \
-                $JSON                                                \
+  mantra-oracle write $n.mantra-oracle               \
+                $(cat keys/pigy-oracle-0.$n.address) \
+                keys/pigy-oracle-0.skey              \
+                on-chain.json                        \
+                $JSON                                \
                 --metadata 247428
 done
 
