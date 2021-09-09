@@ -19,4 +19,4 @@ DIR_CID=$(ipfs add --quiet --pin=false --recursive=true pages | tail -n 1)
 
 ipfs pin remote add --service=pinata --name=pigy $DIR_CID
   
-ipfs name publish --key=pigy /ipfs/$DIR_CID
+echo ipfs name publish --key=pigy /ipfs/$DIR_CID

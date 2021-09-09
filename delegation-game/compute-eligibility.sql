@@ -1,4 +1,18 @@
 
+select
+    n
+  , count(*)
+  from (
+    select
+        pool_id
+      , max(epoch_no) as n
+      from epoch_stake
+      group by pool_id
+      having max(epoch_no) > (select max(epoch_no) from epoch_stake) - 10
+  ) z
+  group by n
+;
+
 
 --drop table pigy_class;
 
@@ -78,7 +92,7 @@ select
   inner join pigy_class
     on amount between stake_min and stake_max
   where rn = 1
-    and epoch_no = (select max(epoch_no) from epoch_stake)
+    and epoch_no = (select max(epoch_no) from epoch_stake) -1
 --  and d.active_epoch_no <= epoch_no - 3
   order by "Pool Ticker", "Pool Address", amount desc
 ;

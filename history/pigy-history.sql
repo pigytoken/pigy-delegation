@@ -25,7 +25,7 @@ order by 1
 
 --drop table pigy_first;
 
-create table pigy_first as
+create temporary table pigy_first as
 select
     row_number() over(order by tx_out_id) as pigy_first
   , source
