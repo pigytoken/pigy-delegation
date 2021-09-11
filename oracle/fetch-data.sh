@@ -1,8 +1,6 @@
-#!/usr/bin/env bash
-
-
-# In order to run this script, you need a free API key from https://quandl.com/.
-# Store it in the file ../keys/quandl.secret.
+#!/usr/bin/env nix-shell
+#!nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/b889a3f7a07515108cc9614639cd307cf2acbec5.tar.gz
+#!nix-shell -i bash -p curl jq
 
 
 set -e
