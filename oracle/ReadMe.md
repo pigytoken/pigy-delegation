@@ -21,28 +21,44 @@ Data Format
 
 In addition to being posted on the blockchain as eUTxO data at the smart-contract address (on `testnet` at [`addr_test1wzpw9x08aymg7g50v5fet6hxgf2phwvhum7uq8mvwr0geasgctrpp`](https://explorer.cardano-testnet.iohkdev.io/en/address?address=addr_test1wzpw9x08aymg7g50v5fet6hxgf2phwvhum7uq8mvwr0geasgctrpp)), for convenience the data is also posted in the eUTxO as metadata with tag `247428` and also at [ipns://k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray](http://gateway.pinata.cloud/ipns/k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray).
 
-The service currently posts cryptocurrency and precious metal prices, and an interest rate. Here is [an example](https://explorer.cardano-testnet.iohkdev.io/en/transaction?id=7832efcc4ff87cbb479dd7d84afdc1b2763fa26536d2d2a9dabb8875e7a1c064):
+The service currently posts some cryptocurrency prices and an interest rate. Here is [an example](https://explorer.cardano-testnet.iohkdev.io/en/transaction?id=b23e3746c5866705db9fbde6442a26b672289bc1d7e70fe91c650f135a42ad88):
 
     {
       "disclaimer": "ipfs://QmccBPKZqh9BJTJpC8oM6rc4gBrpcVXqcixX9KCsE6yDKd",
       "oracle": "https://oracle.pigytoken.com",
-      "timestamp": "2021-09-06T14:49:54+00:00",
+      "timestamp": "2021-09-11T14:49:07+00:00",
       "data": {
         "nyfed": {
           "source": "https://www.newyorkfed.org",
           "symbols": {
-            "SOFR": { "date": "2021-09-02", "value": 5, "scale": 100, "unit": "%", "url": "https://markets.newyorkfed.org/api/rates/secured/sofr" }
+            "SOFR": { "date": "2021-09-09", "value": 5, "scale": 100, "unit": "%", "url": "https://markets.newyorkfed.org/api/rates/secured/sofr" }
           }
         },
-        "quandl": {
-          "source": "https://www.quandl.com",
+        "coingecko": {
+          "source": [
+            "Data provided by CoinGecko",
+            "https://www.coingecko.com/api"
+          ],
           "symbols": {
-            "LBMA/GOLD/PM":        { "date": "2021-09-03", "value": 182370, "scale":       100, "unit": "USD/ounce", "url": "https://www.quandl.com/api/v3/datasets/LBMA/GOLD"       },
-            "LBMA/SILVER":         { "date": "2021-09-03", "value":  24055, "scale":      1000, "unit": "USD/ounce", "url": "https://www.quandl.com/api/v3/datasets/LBMA/SILVER"     },
-            "BITFINEX/ADAUSD/Mid": { "date": "2021-09-05", "value": 291205, "scale":    100000, "unit": "USD/ADA"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/ADAUSD" },
-            "BITFINEX/ADABTC/Mid": { "date": "2021-09-05", "value":   5626, "scale": 100000000, "unit": "BTC/ADA"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/ADABTC" },
-            "BITFINEX/BTCUSD/Mid": { "date": "2021-09-05", "value": 517745, "scale":        10, "unit": "USD/BTC"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/BTCUSD" },
-            "BITFINEX/BTCEUR/Mid": { "date": "2021-09-05", "value": 435735, "scale":        10, "unit": "EUR/BTC"  , "url": "https://www.quandl.com/api/v3/datasets/BITFINEX/BTCEUR" }
+            "ADAUSD": { "value":       271, "scale":       100, "unit": "USD/ADA" },
+            "ADAEUR": { "value":       229, "scale":       100, "unit": "EUR/ADA" },
+            "ADAGBP": { "value":       196, "scale":       100, "unit": "GBP/ADA" },
+            "ADAIDR": { "value":     38595, "scale":         1, "unit": "IDR/ADA" },
+            "ADAJPY": { "value":     29757, "scale":       100, "unit": "JPY/ADA" },
+            "ADABTC": { "value":      5909, "scale": 100000000, "unit": "BTC/ADA" },
+            "ADAETH": { "value":     80873, "scale": 100000000, "unit": "ETH/ADA" },
+            "BTCUSD": { "value":     45873, "scale":         1, "unit": "USD/BTC" },
+            "BTCEUR": { "value":     38827, "scale":         1, "unit": "EUR/BTC" },
+            "BTCGBP": { "value":     33157, "scale":         1, "unit": "GBP/BTC" },
+            "BTCIDR": { "value": 654068039, "scale":         1, "unit": "IDR/BTC" },
+            "BTCJPY": { "value":   5043043, "scale":         1, "unit": "JPY/BTC" },
+            "BTCETH": { "value":  13705724, "scale":   1000000, "unit": "ETH/BTC" },
+            "ETHUSD": { "value":    334693, "scale":       100, "unit": "USD/ETH" },
+            "ETHEUR": { "value":    283285, "scale":       100, "unit": "EUR/ETH" },
+            "ETHGBP": { "value":    241918, "scale":       100, "unit": "GBP/ETH" },
+            "ETHIDR": { "value":  47721390, "scale":         1, "unit": "IDR/ETH" },
+            "ETHJPY": { "value":    367945, "scale":         1, "unit": "JPY/ETH" },
+            "ETHBTC": { "value":     73064, "scale":   1000000, "unit": "BTC/ETH" }
           }
         }
       }
@@ -50,15 +66,28 @@ The service currently posts cryptocurrency and precious metal prices, and an int
 
 Because Plutus does not have a data type for real (floating point) numbers, the prices are represented as a rational number (i.e., a value divided by a scale). Here is how to interpret the example above:
 
-| Symbol              | Description                      | Value                    |                                                                                        |
-|---------------------|----------------------------------|-------------------------:|----------------------------------------------------------------------------------------|
-| SOFR                | Secured Overnight Financing Rate |     0.05       %         | [New York Federal Reserve Bank](https://www.newyorkfed.org)                            |
-| LBMA/GOLD/PM        | Gold Price                       |  1823.70       USD/ounce | [Quandl + LBMA](https://www.quandl.com/data/LBMA/GOLD-Gold-Price-London-Fixing)        |
-| LBMA/SILVER         | Silver Price                     |    24.055      USD/ounce | [Quandl + LBMA](https://www.quandl.com/data/LBMA/SILVER-Silver-Price-London-Fixing)    |
-| BITFINEX/ADAUSD/Mid | ADA Price in USD                 |     2.91205    USD/ADA   | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/ADAUSD-ADA-USD-Exchange-Rate) |
-| BITFINEX/ADABTC/Mid | ADA Price in BTC                 |     0.00005626 BTC/ADA   | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/ADABTC-ADA-BTC-Exchange-Rate) |
-| BITFINEX/BTCUSD/Mid | BTC Price in USD                 | 51774.5        USD/BTC   | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/BTCUSD-BTC-USD-Exchange-Rate) |
-| BITFINEX/BTCEUR/Mid | BTC Price in EUR                 | 43573.5        EUR/BTC   | [Quandl + Bitfinex](https://www.quandl.com/data/BITFINEX/BTCEUR-BTC-EUR-Exchange-Rate) |
+| Symbol              | Description                      | Value                     | Data Provider                                               |
+|---------------------|----------------------------------|--------------------------:|-------------------------------------------------------------|
+| SOFR                | Secured Overnight Financing Rate |        0.05       %       | [New York Federal Reserve Bank](https://www.newyorkfed.org) |
+| ADAUSD              | ADA price in USD                 |        2.71       USD/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| ADAEUR              | ADA price in EUR                 |        2.29       EUR/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| ADAGBP              | ADA price in GBP                 |        1.96       GBP/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| ADAIDR              | ADA price in IDR                 |    38595          IDR/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| ADAJPY              | ADA price in JPY                 |      297.57       JPY/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| ADABTC              | ADA price in BTC                 |        0.00005909 BTC/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| ADAETH              | ADA price in ETH                 |        0.00080873 ETH/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| BTCUSD              | BTC price in USD                 |    45873          USD/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
+| BTCEUR              | BTC price in EUR                 |    38827          EUR/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
+| BTCGBP              | BTC price in GBP                 |    33157          GBP/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
+| BTCIDR              | BTC price in IDR                 |654068039          IDR/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
+| BTCJPY              | BTC price in JPY                 |  5043043          JPY/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
+| BTCETH              | BTC price in ETH                 |       13.705724   ETH/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
+| ETHUSD              | ETH price in USD                 |     3346.93       USD/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
+| ETHEUR              | ETH price in EUR                 |     2832.85       EUR/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
+| ETHGBP              | ETH price in GBP                 |     2419.18       GBP/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
+| ETHIDR              | ETH price in IDR                 | 47721390          IDR/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
+| ETHJPY              | ETH price in JPY                 |   367945          JPY/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
+| ETHBTC              | ETH price in BTC                 |        0.073064   BTC/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
 
 Archives of the data posted by the oracle are available at [ipns://k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray](http://gateway.pinata.cloud/ipns/k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray).
 
