@@ -92,7 +92,7 @@ select
   inner join pigy_class
     on amount between stake_min and stake_max
   where rn = 1
-    and epoch_no = (select max(epoch_no) from epoch_stake) -1
+    and epoch_no = (select max(epoch_no) from epoch_stake)
 --  and d.active_epoch_no <= epoch_no - 3
   order by "Pool Ticker", "Pool Address", amount desc
 ;
