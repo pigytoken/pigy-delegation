@@ -16,5 +16,5 @@ do
   sleep 10s
   CID=$(ipfs add --quiet --pin=false --recursive $DIR | tail -n 1)
   ipfs pin remote add --service=pinata --name=pigy-oracle-data /ipfs/$CID
-  ipfs name publish --key=pigy-oracle-data /ipfs/$CID
+  ipfs name publish --lifetime 120h --key=pigy-oracle-data /ipfs/$CID
 done
