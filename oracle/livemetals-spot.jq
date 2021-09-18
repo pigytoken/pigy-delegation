@@ -1,6 +1,6 @@
 {
   livemetals: {
-    source: "https://api.metals.live/v1/spot"
+    source: "https://api.metals.live"
   , symbols: {
       Au: { value: (100 * (.[0].gold      | tonumber)) | round, scale: 100, unit: "USD/oz", date: (.[4].timestamp / 1000) | todate}
     , Pt: { value: (100 * (.[1].platinum  | tonumber)) | round, scale: 100, unit: "USD/oz", date: (.[4].timestamp / 1000) | todate}
