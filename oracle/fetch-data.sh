@@ -18,6 +18,11 @@ curl -s 'https://api.coingecko.com/api/v3/simple/price?ids=cardano,bitcoin,ether
 | jq -f coingecko.jq \
 > tmp/coingecko.json
 
+curl -s 'https://api.metals.live/v1/spot'  \
+| tee tmp/livemetals.raw \
+| jq -f livemetals-spot.jq \
+> tmp/livemetals.json
+
 curl -s 'https://markets.newyorkfed.org/api/rates/secured/sofr/last/1.json'  \
 | tee tmp/nyfed.raw \
 | jq -f nyfed.jq \
@@ -26,6 +31,7 @@ curl -s 'https://markets.newyorkfed.org/api/rates/secured/sofr/last/1.json'  \
 jq -s 'add | {disclaimer: "ipfs://QmccBPKZqh9BJTJpC8oM6rc4gBrpcVXqcixX9KCsE6yDKd", oracle: "https://oracle.pigytoken.com", timestamp : "'$TIMESTAMP'", data: .}' \
   tmp/nyfed.json  \
   tmp/coingecko.json \
+  tmp/livemetals.json \
 > $JSON
 
 echo $JSON
