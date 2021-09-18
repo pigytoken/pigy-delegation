@@ -21,17 +21,17 @@ Data Format
 
 In addition to being posted on the blockchain as eUTxO data at the smart-contract address (on `mainnet` at [`addr1w83xtd6pekdv93xkj4qz77a5edyuhcxeuvlwex3xm0afukgj73l65`](https://cardanoscan.io/address/addr1w83xtd6pekdv93xkj4qz77a5edyuhcxeuvlwex3xm0afukgj73l65)), for convenience the data is also posted in the eUTxO as metadata with tag `247428` and also at [ipns://k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray](http://gateway.pinata.cloud/ipns/k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray).
 
-The service currently posts some cryptocurrency prices and an interest rate. Here is [an example](https://cardanoscan.io/transaction/59e367eda7821fb95b12ce5ecbdab1c1af58198521b6c20b330d42590434bac9?tab=metadata):
+The service currently posts some cryptocurrency prices, precious metal prices, and an interest rate. Here is [an example](https://cardanoscan.io/transaction/914b2aabdfdeaae0f9399526439ccd6c5d47efd390839e09cff868faba7ec2e5?tab=metadata):
 
     {
       "disclaimer": "ipfs://QmccBPKZqh9BJTJpC8oM6rc4gBrpcVXqcixX9KCsE6yDKd",
       "oracle": "https://oracle.pigytoken.com",
-      "timestamp": "2021-09-12T14:05:57+00:00",
+      "timestamp": "2021-09-18T18:26:21+00:00",
       "data": {
         "nyfed": {
           "source": "https://www.newyorkfed.org",
           "symbols": {
-            "SOFR": { "date": "2021-09-09", "value": 5, "scale": 100, "unit": "%", "url": "https://markets.newyorkfed.org/api/rates/secured/sofr" }
+            "SOFR": { "date": "2021-09-16", "value": 5, "scale": 100, "unit": "%", "url": "https://markets.newyorkfed.org/api/rates/secured/sofr" }
           }
         },
         "coingecko": {
@@ -40,25 +40,37 @@ The service currently posts some cryptocurrency prices and an interest rate. Her
             "https://www.coingecko.com/api"
           ],
           "symbols": {
-            "ADAUSD": { "value":       267, "scale":       100, "unit": "USD/ADA" },
-            "ADAEUR": { "value":       226, "scale":       100, "unit": "EUR/ADA" },
-            "ADAGBP": { "value":       193, "scale":       100, "unit": "GBP/ADA" },
-            "ADAIDR": { "value":     38062, "scale":         1, "unit": "IDR/ADA" },
-            "ADAJPY": { "value":     29347, "scale":       100, "unit": "JPY/ADA" },
-            "ADABTC": { "value":      5799, "scale": 100000000, "unit": "BTC/ADA" },
-            "ADAETH": { "value":     77749, "scale": 100000000, "unit": "ETH/ADA" },
-            "BTCUSD": { "value":     46053, "scale":         1, "unit": "USD/BTC" },
-            "BTCEUR": { "value":     38980, "scale":         1, "unit": "EUR/BTC" },
-            "BTCGBP": { "value":     33288, "scale":         1, "unit": "GBP/BTC" },
-            "BTCIDR": { "value": 656639253, "scale":         1, "unit": "IDR/BTC" },
-            "BTCJPY": { "value":   5062868, "scale":         1, "unit": "JPY/BTC" },
-            "BTCETH": { "value":  13413150, "scale":   1000000, "unit": "ETH/BTC" },
-            "ETHUSD": { "value":    343500, "scale":       100, "unit": "USD/ETH" },
-            "ETHEUR": { "value":    290739, "scale":       100, "unit": "EUR/ETH" },
-            "ETHGBP": { "value":    248284, "scale":       100, "unit": "GBP/ETH" },
-            "ETHIDR": { "value":  48977087, "scale":         1, "unit": "IDR/ETH" },
-            "ETHJPY": { "value":    377627, "scale":         1, "unit": "JPY/ETH" },
-            "ETHBTC": { "value":     74623, "scale":   1000000, "unit": "BTC/ETH" }
+            "ADAUSD": { "value":       238, "scale":       100, "unit": "USD/ADA" },
+            "ADAEUR": { "value":       203, "scale":       100, "unit": "EUR/ADA" },
+            "ADAGBP": { "value":       173, "scale":       100, "unit": "GBP/ADA" },
+            "ADAIDR": { "value":     33894, "scale":         1, "unit": "IDR/ADA" },
+            "ADAJPY": { "value":     26123, "scale":       100, "unit": "JPY/ADA" },
+            "ADABTC": { "value":      4905, "scale": 100000000, "unit": "BTC/ADA" },
+            "ADAETH": { "value":     68771, "scale": 100000000, "unit": "ETH/ADA" },
+            "BTCUSD": { "value":     48435, "scale":         1, "unit": "USD/BTC" },
+            "BTCEUR": { "value":     41306, "scale":         1, "unit": "EUR/BTC" },
+            "BTCGBP": { "value":     35250, "scale":         1, "unit": "GBP/BTC" },
+            "BTCIDR": { "value": 690840384, "scale":         1, "unit": "IDR/BTC" },
+            "BTCJPY": { "value":   5324373, "scale":         1, "unit": "JPY/BTC" },
+            "BTCETH": { "value":  14026648, "scale":   1000000, "unit": "ETH/BTC" },
+            "ETHUSD": { "value":    345359, "scale":       100, "unit": "USD/ETH" },
+            "ETHEUR": { "value":    294527, "scale":       100, "unit": "EUR/ETH" },
+            "ETHGBP": { "value":    251344, "scale":       100, "unit": "GBP/ETH" },
+            "ETHIDR": { "value":  49259826, "scale":         1, "unit": "IDR/ETH" },
+            "ETHJPY": { "value":    379650, "scale":         1, "unit": "JPY/ETH" },
+            "ETHBTC": { "value":     71327, "scale":   1000000, "unit": "BTC/ETH" }
+          }
+        },
+        "metalslive": {
+          "source": "https://api.metals.live",
+          "symbols": {
+            "Au": { "value":  176020, "scale": 100, "unit": "USD/oz", "date": "2021-09-17T20:59:33Z" },
+            "Pt": { "value":   95310, "scale": 100, "unit": "USD/oz", "date": "2021-09-17T20:59:33Z" },
+            "Ag": { "value":    2249, "scale": 100, "unit": "USD/oz", "date": "2021-09-17T20:59:33Z" },
+            "Pd": { "value":  201793, "scale": 100, "unit": "USD/oz", "date": "2021-09-17T20:59:33Z" },
+            "Ir": { "value":  610000, "scale": 100, "unit": "USD/oz", "date": "2021-09-17T20:58:19Z" },
+            "Ru": { "value":   75000, "scale": 100, "unit": "USD/oz", "date": "2021-09-17T20:58:19Z" },
+            "Rh": { "value": 2025000, "scale": 100, "unit": "USD/oz", "date": "2021-09-17T20:58:19Z" }
           }
         }
       }
@@ -68,26 +80,33 @@ Because Plutus does not have a data type for real (floating point) numbers, the 
 
 | Symbol              | Description                      | Value                      | Data Provider                                               |
 |---------------------|----------------------------------|---------------------------:|-------------------------------------------------------------|
-| SOFR                | Secured Overnight Financing Rate |        0.05        %       | [New York Federal Reserve Bank](https://www.newyorkfed.org) |
-| ADAUSD              | ADA price in USD                 |       2.67         USD/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
-| ADAEUR              | ADA price in EUR                 |       2.26         EUR/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
-| ADAGBP              | ADA price in GBP                 |       1.93         GBP/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
-| ADAIDR              | ADA price in IDR                 |     38062.         IDR/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
-| ADAJPY              | ADA price in JPY                 |       293.47       JPY/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
-| ADABTC              | ADA price in BTC                 |         0.00005799 BTC/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
-| ADAETH              | ADA price in ETH                 |         0.00077749 ETH/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
-| BTCUSD              | BTC price in USD                 |     46053.         USD/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
-| BTCEUR              | BTC price in EUR                 |     38980.         EUR/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
-| BTCGBP              | BTC price in GBP                 |     33288.         GBP/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
-| BTCIDR              | BTC price in IDR                 | 656639253.         IDR/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
-| BTCJPY              | BTC price in JPY                 |   5062868.         JPY/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
-| BTCETH              | BTC price in ETH                 |        13.413150   ETH/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
-| ETHUSD              | ETH price in USD                 |      3435.00       USD/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
-| ETHEUR              | ETH price in EUR                 |      2907.39       EUR/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
-| ETHGBP              | ETH price in GBP                 |      2482.84       GBP/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
-| ETHIDR              | ETH price in IDR                 |  48977087.         IDR/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
-| ETHJPY              | ETH price in JPY                 |    377627.         JPY/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
-| ETHBTC              | ETH price in BTC                 |         0.074623   BTC/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
+| SOFR                | Secured Overnight Financing Rate |         0.05       %       | [New York Federal Reserve Bank](https://www.newyorkfed.org) |
+| ADAUSD              | ADA price in USD                 |         2.38       USD/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| ADAEUR              | ADA price in EUR                 |         2.03       EUR/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| ADAGBP              | ADA price in GBP                 |         1.73       GBP/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| ADAIDR              | ADA price in IDR                 |     33894.         IDR/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| ADAJPY              | ADA price in JPY                 |       261.23       JPY/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| ADABTC              | ADA price in BTC                 |         0.00004905 BTC/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| ADAETH              | ADA price in ETH                 |         0.00068771 ETH/ADA | [CoinGecko](https://www.coingecko.com/en/coins/cardano)     |
+| BTCUSD              | BTC price in USD                 |     48435.         USD/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
+| BTCEUR              | BTC price in EUR                 |     41306.         EUR/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
+| BTCGBP              | BTC price in GBP                 |     35250.         GBP/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
+| BTCIDR              | BTC price in IDR                 | 690840384.         IDR/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
+| BTCJPY              | BTC price in JPY                 |   5324373.         JPY/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
+| BTCETH              | BTC price in ETH                 |        14.026648   ETH/BTC | [CoinGecko](https://www.coingecko.com/en/coins/bitcoin)     |
+| ETHUSD              | ETH price in USD                 |      3453.59       USD/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
+| ETHEUR              | ETH price in EUR                 |      2945.27       EUR/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
+| ETHGBP              | ETH price in GBP                 |      2513.44       GBP/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
+| ETHIDR              | ETH price in IDR                 |  49259826.         IDR/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
+| ETHJPY              | ETH price in JPY                 |    379650.         JPY/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
+| ETHBTC              | ETH price in BTC                 |         0.071327   BTC/ETH | [CoinGecko](https://www.coingecko.com/en/coins/ethereum)    |
+| Au                  | Gold price                       |      1760.20       USD/oz  | [metals.live](https://api.metals.live)                      |
+| Pt                  | Platinum price                   |       953.10       USD/oz  | [metals.live](https://api.metals.live)                      |
+| Ag                  | Silver price                     |        22.49       USD/oz  | [metals.live](https://api.metals.live)                      |
+| Pd                  | Palladium price                  |      2017.93       USD/oz  | [metals.live](https://api.metals.live)                      |
+| Ir                  | Iridium price                    |      6100.00       USD/oz  | [metals.live](https://api.metals.live)                      |
+| Ru                  | Ruthenium price                  |       750.00       USD/oz  | [metals.live](https://api.metals.live)                      |
+| Rh                  | Rhodium price                    |     20250.00       USD/oz  | [metals.live](https://api.metals.live)                      |
 
 Archives of the data posted by the oracle are available at [ipns://k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray](http://gateway.pinata.cloud/ipns/k51qzi5uqu5dgsw6m8og2thi7kzs9lxjb7w0y4r20u0lkrm92vuqja644v6ray).
 

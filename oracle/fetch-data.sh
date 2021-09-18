@@ -19,12 +19,12 @@ curl -s 'https://api.coingecko.com/api/v3/simple/price?ids=cardano,bitcoin,ether
 > tmp/coingecko.json
 
 curl -s 'https://api.metals.live/v1/spot'  \
-| tee tmp/metalslive.raw \
+| tee tmp/metalslive-spot.raw \
 | jq -f metalslive-spot.jq \
 > tmp/metalslive-spot.json
 
 curl -s 'https://api.metals.live/v1/spot/commodities'  \
-| tee tmp/metalslive.raw \
+| tee tmp/metalslive-commodity.raw \
 | jq -f metalslive-commodity.jq \
 > tmp/metalslive-commodity.json
 
