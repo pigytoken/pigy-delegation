@@ -6,6 +6,13 @@ set -e
 
 TIMESTAMP=$(date --utc --rfc-3339=seconds | sed -e 's/ /T/')
 
+if [[ -e keys/metalslive.secret ]]
+then
+  METALSLIVE=$(cat keys/metalslive.secret)
+else
+  METALSLIVE=
+fi
+
 mkdir -p data tmp
 
 DIR=data
@@ -13,28 +20,28 @@ DIR=data
 JSON=$DIR/$TIMESTAMP.json
 
 {
-  curl -s 'https://markets.newyorkfed.org/api/rates/secured/sofr/last/1.json' \
+  curl -s "https://markets.newyorkfed.org/api/rates/secured/sofr/last/1.json" \
   |  tee tmp/nyfed.raw \
   |  jq -f nyfed.jq \
   || echo '{}'
 } 2> /dev/null > tmp/nyfed.json
 
 {
-  curl -s 'https://api.coingecko.com/api/v3/simple/price?ids=cardano,bitcoin,ethereum&vs_currencies=btc,eth,usd,eur,idr,gbp,jpy' \
+  curl -s "https://api.coingecko.com/api/v3/simple/price?ids=cardano,bitcoin,ethereum&vs_currencies=btc,eth,usd,eur,idr,gbp,jpy" \
   |  tee tmp/coingeck.raw \
   |  jq -f coingecko.jq \
   || echo '{}'
 } 2> /dev/null > tmp/coingecko.json
 
 {
-  curl -s "https://api.metals.live/v1/spot$(cat keys/metalslive.secret)" \
+  curl -s "https://api.metals.live/v1/spot$METALSLIVE" \
   |  tee tmp/metalslive-spot.raw \
   |  jq -f metalslive-spot.jq \
   || echo '{}'
 } 2> /dev/null > tmp/metalslive-spot.json
 
 {
-  curl -s "https://api.metals.live/v1/spot/commodities$(cat keys/metalslive.secret)" \
+  curl -s "https://api.metals.live/v1/spot/commodities$METALSLIVE" \
   |  tee tmp/metalslive-commodity.raw \
   |  jq -f metalslive-commodity.jq \
   || echo '{}'
