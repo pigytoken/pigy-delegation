@@ -27,14 +27,14 @@ JSON=$DIR/$TIMESTAMP.json
 } 2> /dev/null > tmp/coingecko.json
 
 {
-  curl -s 'https://api.metals.live/v1/spot' \
+  curl -s "https://api.metals.live/v1/spot$(cat keys/metalslive.secret)" \
   |  tee tmp/metalslive-spot.raw \
   |  jq -f metalslive-spot.jq \
   || echo '{}'
 } 2> /dev/null > tmp/metalslive-spot.json
 
 {
-  curl -s 'https://api.metals.live/v1/spot/commodities' \
+  curl -s "https://api.metals.live/v1/spot/commodities$(cat keys/metalslive.secret)" \
   |  tee tmp/metalslive-commodity.raw \
   |  jq -f metalslive-commodity.jq \
   || echo '{}'

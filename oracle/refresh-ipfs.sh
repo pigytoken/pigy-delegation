@@ -14,7 +14,7 @@ do
   echo
   inotifywait $DIR
   sleep 10s
-  CID=$(ipfs add --quiet --pin=false --recursive $DIR | tail -n 1)
+  CID=$(ipfs add --quieter --pin=false --recursive $DIR)
   ipfs pin remote add --service=pinata --name=pigy-oracle-data /ipfs/$CID
   ipfs name publish --lifetime 120h --key=pigy-oracle-data /ipfs/$CID
 done
