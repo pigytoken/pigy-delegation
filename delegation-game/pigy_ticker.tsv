@@ -1,4 +1,3 @@
-NO	TICKER	WEBSITE	TWITTER	SPO Group in adapools.org?	POOL ID
 1	00000	https://adaberrypi.com/	@adaberrypi	yes	33708d590f4549170125524fcbd6bc189fa8711fba52f8ead4276ca4
 2	1VICA	https://vica-stake-pool.com/	@firstvica	yes	39543229fb6734b60f7ce76886eedee4dd17bbcb49e180ffe1200ee5
 3	8SQRD 	https://8sqrdpools.com/	@8sqrd	yes	6333007fadda8a9e086c2c426a02197f02e3abb4f17e22bf51341231
@@ -21,7 +20,6 @@ NO	TICKER	WEBSITE	TWITTER	SPO Group in adapools.org?	POOL ID
 20	BFADA 	https://bonafideada.com/	@i_amshaunak	yes	4f345190f6280c907325bcd11f9b00f222f092c889f6bedfb739abb1
 21	BHMT	https://www.behemothpool.com/	@behemothpool	yes	052f4ae6c6f39c00a45e390ed0849fd719e1848c60cf3ba6b985635e
 22	BIO	https://pool.bio/	@bio_pool	yes	603749d1b47c79cdf3072c284abb9810dd98afe827d6ae2b92f115ed
-23	BLOC1				not found
 24	BLOCK	https://kblocks.net/	@kblocks_ada	yes	c63dab6d780a74cbae2a27696c9723f55b3092b2bd001256df03827f
 25	BN1AU 	https://brisnode-cardano.org/	@brisnodeau	yes	acc4bd79e795648e5134ec8c80bc2d486aa9007de6e87a348a1f98ba
 26	BSP	https://brothershipool.org/	@brothershippool	yes	89eba2781e5cd11ccda6be56503702a39e9941e522f04cd5bba22957
@@ -50,7 +48,6 @@ NO	TICKER	WEBSITE	TWITTER	SPO Group in adapools.org?	POOL ID
 49	ICRYP	https://icryp.net/	@icryp	yes	2671702f26f947ecc114861c4983bfdc8616d3fa2bace18dd4a91e65
 50	ISR 	https://www.cardano-israel.com/	@israelicardano	yes	5121819e5114235cb8c377ecf0a9d4e311898c447043e3b5b2848f63
 51	JED	https://adapool.jed.id.au/	@jstakepool	yes	df2c28671a7d2e9b29703547533543926445f3a70f119a07af41d434
-52	JERRY				retired
 53	JOKER	https://twitter.com/cardanojoker	@cardanojoker	yes	d03dfd66fa5560fa43c8fc524f76299d05102f6a297e2fba2bfa5b9a
 54	KAWAN 	https://kawancardano.com/	@kawanuap	yes	40c5a505a4276c94e49b848c1b0aa62c4ea244574f4e2e28ebb29210
 55	KOALA	https://koalapool.org/	@koala_steve	yes	9138b6f09e8e69c29fdee4e11b147b7ad351aab23fc73a9976907f10
@@ -112,7 +109,6 @@ NO	TICKER	WEBSITE	TWITTER	SPO Group in adapools.org?	POOL ID
 111	WINE 	https://winepool.io/	@pool_wine	yes	76992ac7c605ff6ec397c296d7964dd3139dd32f8cef70cfc4019361
 112	XSEC	https://ada.xsec.es/	@xsecp	yes	ac4c79de638c8bb08997e939dccde43fe347a392d11a7ddf77bf3816
 113	XYZ	https://cardanopool.xyz/	@cardanopoolxyz	yes	3dec052cf085697aa6c32a934527f7c5761165a6a6f02a9af30c9ed1
-114	YIELD				retired
 115	YOADA	https://www.yoada.fr/	@yoadastakepool	yes	96553a437b99271fdcaa30c279e432224342e88147741db73872f03c
 116	YORK 	https://free-york.com/		yes	9aa5e16dda2a131764018bbb9546a18fc9695a152e0f5dff2046e7b4
 117	HEART	https://adaheartpool.com/	@adaheartpool	yes	f8b811d63ef2ac9e19eff41ab7a99f37b82da701f8ddb34d6d12cdb7
@@ -194,16 +190,3 @@ NO	TICKER	WEBSITE	TWITTER	SPO Group in adapools.org?	POOL ID
 193	PBD	https://www.palebluedotpool.org	@palebluedotpool	yes	5283b9e53fff62fa8578f428e816a7e28e2ee6cf3db57b453b71c68b
 194	DIVY	https://discovery-pool.com/	@Jay_N_T	yes	654d96593e499e70889eeae16a15ad8682f8349fd1b77726bbbf8a6d
 195	K9K	https://www.k9kstaking.com	@K9kStaking	yes	6cabf3837d2884000af0eb9b661870f0080233cfb4e9a239a007450c
-x	CARN	x	x	yes	df0d1b70945b0c4d6560ee64837ca54e025eabbe710e256f6836273e
-x	MOON1	x	x	yes	8253f8a94044070ddb196884eb3e912e9b6dca9a0e3210325a09a335
-x	SWELL	x	x	yes	7ff2b54f311b6774e82cbf780c413e49e37b7501afd30f154918f7ca
-x	CONGE	x	x	yes	49b7d9e2116ef05fbe1ee784391e31aecb360bbba2e979f389ae3d89
-x	CONGE	x	x	yes	6e75544df8deb82f46153b20f5d71766deaca701089c939784566532
-x	TOFU	x	x	yes	4dd940ac98c8bc3f7c3b314125c6078a7e1ca0467f6649f275a0ff7e
-x	DECI	x	x	yes	e1ae99532bbe499351d123769bb5d49a20a4607f067b0919d7a1ece7
-x	XSP	x	x	yes	788898a81174665316af96880459dcca053f7825abb1b0db9a433630
-x	XSP2	x	x	yes	aa65bf8422f6b5af3a1197e9fe6649539025f2e18257cfb2f1e631aa
-x	FALCO	x	x	yes	50de79c63d672319e20be59c620eb57ed1de8b7cc7fa489d8f22e353
-x	HOLA	x	x	yes	ce9f192835046ba71ed302d5d3e0ba99d65fd3950346cadad4781814
-x	MNM	x	x	yes	a932273ab880015990a677eb4cc598b306df0ece54aa98d1eefab600
-x	OYAJI	x	x	yes	1f7f6c5b7c0aa91b78b7e86b8bdb95a3c0485f22bd61d848177fd66e

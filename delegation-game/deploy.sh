@@ -7,6 +7,8 @@ set -ex
 . $HOME/secrets/ipfs.sh
 . $HOME/secrets/postgresql.sh
 
+gawk 'BEGIN { FS = "\t" ; OFS = "," } FNR > 1 { print $2, $6, $5 }' pigy_ticker.tsv > pigy_ticker.csv
+
 DATE=$(date --rfc-3339 seconds -u)
 
 psql -f compute-eligibility.sql
