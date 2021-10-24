@@ -1,9 +1,7 @@
 {
   coingecko: {
-    source: [
-      "Data provided by CoinGecko",
-      "https://www.coingecko.com/api"
-    ],
+    notice: "Data provided by CoinGecko",
+    source: "https://www.coingecko.com/api",
     symbols: {
       ADAUSD: {value: (      100 * .cardano.usd)  | round, scale:       100, unit: "USD/ADA"},
       ADAEUR: {value: (      100 * .cardano.eur)  | round, scale:       100, unit: "EUR/ADA"},

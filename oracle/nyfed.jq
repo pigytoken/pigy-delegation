@@ -1,5 +1,6 @@
 .refRates[] | {
   nyfed: {
+    notice: "Data provided by Federal Reserve Bank of New York",
     source: "https://www.newyorkfed.org",
     symbols: {
       SOFR: {

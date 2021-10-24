@@ -49,7 +49,7 @@ JSON=$DIR/$TIMESTAMP.json
 
 if [[ `stat -c %s tmp/metalslive-spot.json` -gt 3 ]] || [[ `stat -c %s tmp/metalslive-commodity.json` -gt 3 ]]
 then
-  jq -s 'add | {metalslive: {source: "https://api.metals.live", symbols: .}}' \
+  jq -s 'add | {metalslive: {notice: "Data provided by metals.live", source: "https://api.metals.live", symbols: .}}' \
     tmp/metalslive-spot.json \
     tmp/metalslive-commodity.json \
   > tmp/metalslive.json
